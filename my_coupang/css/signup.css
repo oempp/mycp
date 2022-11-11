@@ -1,0 +1,230 @@
+.signup_1stbgBox {
+    width: 1280px;
+    height: 200px;
+    margin: 50px auto 100px;
+}
+
+.signup_2ndbgBox {
+    width: 1280px;
+    height: 500px;
+    margin: auto;
+    /* background-color:darkcyan */
+}
+
+.signup_3rdbgBox {
+    width: 1280px;
+    height: 300px;
+    margin: auto;
+    /* background-color:darkcyan */
+}
+
+.flexBox {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1280px;
+}
+
+.inlineBlock {
+    width: 380px;
+    display: inline-block;
+    position: relative;
+}
+
+.inlineBlock>.ab_p2 {
+    position: absolute;
+    top: 70px;
+    left: 190px;
+}
+
+.inlineBlock>.ab_p1 {
+    position: absolute;
+    font-weight: bold;
+    top: 50px;
+    left: 190px;
+}
+
+.inline {
+    float: left;
+}
+
+.under_line {
+    width: auto;
+    height: 2px;
+    margin: 10px 0px 20px 0px;
+    background-color: black;
+}
+
+.signup_btn {
+    width: 644px;
+    height: 60px;
+    margin: 50px 318px;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.signup_btn a {
+    display: block;
+}
+
+.flexBox>li p {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login_logo {
+    
+    width: 382px;
+    height: 87px;
+    margin: 90px auto;
+    background: url(../images/signup/logo_382x87.png);
+}
+
+
+.input_user_info li {
+    display: flex;
+    width: 640px;
+    height: auto;
+    margin: 5px 0px 5px 5px;
+    flex-wrap: row wrap;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+}
+
+.input_user_info img {
+    border-right: 1px solid #969696;
+    box-sizing: border-box;
+}
+
+.login_logo a {
+    text-indent: -9999px;
+    display: block;
+    width: 382px;
+    height: 87px;
+}
+
+input {
+    border: none;
+}
+
+label {
+    text-indent: -9999px;
+}
+
+.input_user_info ul input {
+    font-size: 20px;
+    text-indent: 10px;
+    /* width: 585px; */
+    height: 60px;
+    line-height: 60px;
+} 
+
+/* 성별을 제외한 길이 값 */
+#user_info_id,
+#user_info_pwd,
+#user_info_chkPwd,
+#user_info_name,
+#user_info_birth,
+#user_info_mobile
+{
+    width: 585px;
+}
+
+#user_info_addr {
+    width: 517px;
+}
+
+.terms_accept_bgBox {
+    width: 650px;
+    height: 670px;
+    margin: 0px auto 70px;
+    /* border-bottom: 2px solid black; */
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+.ckbox_bgbox {
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.ckbox_size {
+    width: 27px;
+    height: 27px;
+}
+
+.ckbox_bgbox p {
+    font-size: 26px;
+    text-indent: 10px;
+}
+
+.terms_accept_bgBox>p {
+    position: absolute;
+    margin: 10px auto;
+    font-size: 17px;
+    left: 45px;
+}
+
+.ckbox_bgbox2 {
+    width: 620px;
+    height: 400px;
+    padding-top: 40px;
+    margin: 100px auto 20px auto;
+    border: 1px solid #969696;
+}
+
+.select_opt_box {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.select_opt_box li {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.form_bgBox {
+    width: 650px;
+    height: auto;
+    margin: 0px auto 70px;
+    /* border-bottom: 2px solid black; */
+    /* background-color: aquamarine; */
+}
+
+
+.select_opt_box input {
+    width: 20px;
+    height: 20px;
+    margin: 30px 30px;
+}
+
+.select_opt_box2 input {
+    margin-left: 80px;
+}
+
+.signup_btn3 {
+    width: 644px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+/* genderBox */
+
+.gentder_txt {
+    font-size: 20px;
+    line-height: 60px;
+    margin:0 10px;
+}
+
+#m, #f {
+    margin-right: 10px;
+}

@@ -1,0 +1,24 @@
+
+1:#fedd14
+2:#969696
+3:#ffead5
+
+4 :#d4e8f3
+5:#834fff
+6:#e6cdc8
+
+7 :#f3c404
+8:#eaeef7
+9:#f7ede1
+
+10 :#ca8a5c
+11 :#dd630e
+12 :#00acac
+
+13 :#000000
+14 :#ffefa2
+15 :#f5fdce
+
+16 :#dff1fd
+17 :#ebf3ca
+18 :#fff6b1

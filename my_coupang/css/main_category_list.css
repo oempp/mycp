@@ -1,0 +1,7405 @@
+/* 메인 카테고리 리스트 숨기기 */
+
+/* 1stlist hidden */
+.main_ctgr_container_1st {
+    display: none;
+}
+
+/* 2nd list hidden */
+.main_ctgr_container_1st>li>ul {
+    display: none;
+}
+
+/* 3rd list hidden */
+.main_ctgr_container_1st>li>ul>li>ul {
+    display: none;
+}
+
+.main_ctgr_container_1st li a {
+    display: block;
+}
+
+
+.main_ctgr_container_1st li a:hover {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 0px;
+}
+
+.add_color {
+    background-color: #1e1e1e;
+    color: #ffffff !important;
+    padding: 0px;
+}
+
+/* 메인 카테고리 리스트  */
+/* .main_nav > ul {
+    width : 220px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;    
+    padding-left: 10px;
+    background-color:rgb(197, 69, 27);    
+    border: 1px solid rgb(27, 21, 21);
+    box-sizing: border-box;
+    position:absolute;
+} */
+
+/* nav li {
+    visibility: hidden;
+}
+ */
+
+
+
+
+
+
+/*-----------------------------------------------------------------*/
+/* 1st 카테고리 메뉴 ul 정렬 */
+.main_ctgr_container_1st {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #222;
+    font-size: 13px;
+    width: 220px;
+    justify-content: left;
+    /* border: 1px solid #222; */
+    box-sizing: border-box;
+    position: absolute;
+}
+
+
+/* 1st 카테고리 메뉴 li 디자인  */
+.main_ctgr_container_1st>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    
+}
+
+/*-----------------------------------------------------------------*/
+/* .main_nav > .main_ctgr_container_1st>li>ul {
+    display: none;
+} */
+
+
+/*-----------------------------2nd_01 패션의류 잡화----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_01>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_02 뷰티----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_02>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_03 유아동패션----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_03 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_03>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_04 식품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_04 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_04>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_05 주방용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_05 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_05>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_06 생활용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_06 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_06>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_07 홈인테리어----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_07 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_07>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_08 가전디지털----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_08 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_08>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_09 스포츠 레저----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_09 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_09>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_10 자동차 용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_10 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_10>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_11 도서/음반/DVD----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_11>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*---------------------------- 2nd_12 완구/취미----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_12>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_13 문구/오피스----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_13 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_13>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_14 반려동물용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_14 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_14>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_15 헬스/건강식품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_15 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_15>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_16 여행/티켓----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_16 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 490px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_16>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_17 한복----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_17 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 610px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_17>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_18 싱글라이프----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_18 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 550px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+    z-index: 10000;
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_18>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_19 결혼준비----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_19 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 820px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_19>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_20 아트/공예----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_20 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 850px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_20>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_21 홈카페----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_21 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 880px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_21>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------2nd_22 실버스토어----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_2nd_22 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 910px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_2nd_22>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/* 3rd list */
+
+/*----------------------------3rd_01 여성패션----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_01>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------------------------3rd_02 남성패션----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_02>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_03 남녀 공용 의류----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_03 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_03>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_04 남녀 공용 의류----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_04 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_04>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_05 스킨케어----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_05 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_05>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_06 클렌징/필링----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_06 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_06>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_07 메이크업----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_07 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_07>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_08 향수----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_08 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_08>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_09 남성화장품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_09 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_09>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_10 네일----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_10 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_10>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_11 뷰티소품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_11>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_12 어린이화장품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_12>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_13 헤어----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_13 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_13>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_14 바디----------------------------*/
+
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_14 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_14>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_15 선물세트/키트----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_15 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_15>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_16 유아동패션----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_16 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_16>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_17 기저귀----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_17 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_17>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_18 물티슈----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_18 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_18>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_19 분유/어린이식품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_19 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_19>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_20 분유/어린이식품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_20 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_20>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_21 수유용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_21 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_21>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_22 이유용품/유아식기----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_22 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_22>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_23 매트/안전용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_23 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_23>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_24 유모차/웨건----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_24 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_24>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_25 카시트----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_25 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_25>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*---------------------------- 3rd_26 아기띠/외출용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_26 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_26>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_27 욕실용품/스킨케어----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_27 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_27>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------------------------3rd_28 위생/건강/세제----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_28 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_28>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_29 유아동침구----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_29 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_29>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_30 유아가구/인테리어----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_30 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_30>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_31 유아가구/인테리어----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_31 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_31>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_32 과일----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_32 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_32>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_33 견과/건과----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_33 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_33>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_34 채소----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_34 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_34>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_35 쌀/잡곡----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_35 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_35>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_36 축산/계란----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_36 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_36>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_37 수산물/건어물----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_37 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_37>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_38 생수/음료----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_38 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_38>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_39 커피/원두/차----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_39 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_39>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_40 과자/초콜릿/시리얼----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_40 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_40>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_41 면/통조림/가공식품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_41 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_41>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_42 가루/조미료/오일----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_42 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_42>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_43 장/소스/드레싱/식초----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_43 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_43>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------------------------3rd_44 유제품/아이스크림----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_44 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_44>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_45 냉장/냉동/간편요리----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_45 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_45>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_46건강식품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_46 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_46>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_47 주방가전----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_47 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_47>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_48 냄비 프라이퍈----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_48 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_48>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_49 주방조리도구----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_49 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_49>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_50 그릇/홈세트----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_50 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_50>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_51 수저/커트러리----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_51 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_51>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_52 컵/텀블러/와인용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_52 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_52>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_53주전자/커피/티용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_53 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_53>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_54 주방수납/정리----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_54 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_54>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_55밀폐저장/도시락----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_55 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_55>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_56주방잡화----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_56 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_56>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------------------------3rd_57일회용품/종이컵----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_57 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_57>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_58보온/보냉용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_58 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_58>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_59 1인가구 주방용품----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_59 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_59>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_60 헤어/바디/세안----------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_60 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_60>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_61 구강/면도---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_61 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_61>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_62 화장지/물티슈---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_62 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_62>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_63 생리대/성인기저귀---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_63 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_63>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_64 기저귀---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_64 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_64>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_65 세탁세제---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_65 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_65>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_66 청소/주방세제---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_66 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_66>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_67 탈취/방향/살충---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_67 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_67>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_68 건강/의료용품---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_68 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_68>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_69 성인용품(19)---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_69 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_69>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_70 세탁/청소용품---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_70 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_70>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_71 욕실용품---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_71 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_71>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_72 생활전기용품---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_72 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_72>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_73 수납/정리---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_73 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_73>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_74 주방수납/잡화---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_74 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_74>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_75 생활잡화---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_75 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_75>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_76 F/W 침구샵---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_76 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_76>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_77 싱글하우스---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_77 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_77>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_78 홈데코---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_78 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_78>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_79 가구---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_79 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_79>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_80 수납/정리---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_80 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_80>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_81 침구---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_81 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_81>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_82 커튼/블라인드---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_82 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_82>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_83 카페트/쿠션/거실화---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_83 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_83>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_84 카페트/쿠션/거실화---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_84 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_84>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_85 욕실용품---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_85 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_85>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_86 조명/스탠드---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_86 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_86>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_87 셀프인테리어---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_87 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_87>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_88 셀프인테리어---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_88 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_88>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_89 TV/영상가전---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_89 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_89>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_90 냉장고---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_90 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_90>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_91 세탁기/건조기---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_91 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_91>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_91 세탁기/건조기---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_91 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_91>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_92 생활가전---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_92 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_92>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_93 청소기---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_93 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_93>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_94 계절가전---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_94 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_94>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_95 뷰티/헤어가전---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_95 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_95>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_96 건강가전---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_96 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_96>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_97 주방가전---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_97 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_97>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------------------------3rd_97 주방가전---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_97 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_97>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_98 데스크탑---------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_98 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_98>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_99 키보드/마우스--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_99 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_99>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_100 저장장치--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_100 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_100>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_101 프린터/복합기--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_101 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_101>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_102 PC부품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_102 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_102>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_103 캠핑전문관--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_103 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_103>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_104 홈트레이닝--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_104 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_104>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_105 수영/수상스포츠--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_105 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_105>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_106 골프--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_106 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_106>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_107 자전거--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_107 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_107>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_108 킥보드/스케이트--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_108 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_108>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_109 낚시--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_109 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_109>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_110 등산/아웃도어--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_110 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_110>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_111 스포츠신발--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_111 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_111>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_112 스포츠신발--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_112 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_112>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_113 여성스포츠의류--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_113 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_113>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_114 유아스포츠의류--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_114 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_114>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_115 유아스포츠의류--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_115 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_115>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_116 구기스포츠--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_116 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_116>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_117 라켓스포츠--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_117 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_117>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_118 헬스/요가/댄스--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_118 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_118>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_119 인테리어--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_119 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_119>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_120 익스테리어--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_120 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_120>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_121 세차/카케어--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_121 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_121>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_122 >차량용 전자기기--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_122 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_122>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_123 차량관리/소모품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_123 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_123>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_124 RV/아웃도어--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_124 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_124>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_125 부품/안전/공구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_125 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_125>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_126 오토바이/전동킥보드--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_126 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_126>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_127 유아/어린이--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_127 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_127>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_128 소설/에세이/시--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_128 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_128>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_129 초중고참고서--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_129 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_129>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_130 가정 살림--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_130 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_130>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_129 초중고참고서--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_130 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_130>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_131 건강/취미--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_131 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_131>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_132 경제/경영--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_132 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_132>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_133 과학/공학--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_133 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_133>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_134 국어/외국어/사전--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_134 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_134>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_135 대학교재--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_135 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_135>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_136 만화/라이트노벨--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_136 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_136>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_137 사회/정치--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_137 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_137>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_138 수험서/자격증--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_138 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_138>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_139 여행--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_139 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_139>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_140 역사--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_140 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_140>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_141 예술--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_141 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_141>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_142 인문--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_142 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_142>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_143 캐릭터별완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_143 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_143>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_144 캐릭터별완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_144 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_144>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_145 로봇/작동완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_145 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_145>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_146 역할놀이--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_146 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_146>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_147 블록놀이--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_147 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_147>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_148 인형--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_148 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_148>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_149 물놀이/계절완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_149 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_149>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_150 승용완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_150 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_150>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_151 스포츠/야외완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_151 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_151>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_152 실내대형완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_152 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_152>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_153 실내대형완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_153 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_153>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_154 실내대형완구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_154 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_154>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_155 보드게임--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_155 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_155>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_156 RC완구/부품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_156 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_156>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_157 프라모델--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_157 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_157>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_158 프라모델--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_158 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_158>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_159 프라모델--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_159 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_159>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_160 캐릭터문구--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_160 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_160>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_161 학용품/수업준비--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_161 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_161>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_162 필기류--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_162 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_162>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------------------------3rd_163 노트/메모지--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_163 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_163>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_164 다이어리/플래너--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_164 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_164>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_165 바인더/파일--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_165 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_165>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_166 파티/이벤트--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_166 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_166>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_167 데코/포장용품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_167 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_167>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_168 카드/엽서/봉투--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_168 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_168>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_169 카드/엽서/봉투--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_169 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_169>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_170 복사용품/라벨지--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_170 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_170>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_171 보드/칠판/광고--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_171 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_171>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_172 강아지사료--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_172 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_172>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_173 강아지간식--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_173 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_173>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_174 강아지영양제--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_174 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_174>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_175 강아지용품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_175 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_175>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_176 고양이사료--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_176 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_176>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_177 고양이간식--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_177 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_177>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_178 고양이영양제--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_178 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_178>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_179 고양이영양제--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_178 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_178>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_179 고양이용품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_179 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_179>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_180 펫티켓/산책용품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_180 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_180>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_181 관상어용품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_181 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_181>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_182 관상어용품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_182 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_182>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_183 어린이건강식품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_183 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_183>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_184 비타민/미네랄--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_184 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_184>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_185 영양제--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_185 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_185>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_186 허브/식물추출물--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_186 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_186>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_187 홍삼/인삼--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_187 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_187>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_188 건강즙/음료--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_188 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 340px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_188>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_189 꿀/프로폴리스--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_189 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_189>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_190 꿀/프로폴리스--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_190 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_190>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_191 헬스보충식품--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_191 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 430px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_191>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_192 다이어트/이너뷰티--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_192 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_192>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_193 티켓/패스--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_193 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_193>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_194 렌터카--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_194 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_194>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_195 패키지여행/항공--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_195 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_195>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_196--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_196 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_196>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_197--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_197 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_197>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_198--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_198 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 310px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_198>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_199--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_199 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_199>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_200--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_200 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 190px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_200>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_201--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_201 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_201>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_202--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_202 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 250px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_202>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------3rd_203--------------------------*/
+/* ul 목록정렬 */
+.main_ctgr_container_3rd_203 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    position: absolute;
+    top: 280px;
+    /* 각 카테고리마다 수정 (+30px) */
+    left: 190px;
+    /*  */
+
+}
+
+/* li 정렬 */
+.main_ctgr_container_3rd_203>li {
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    /*     border-bottom: 0.05em solid #222;
+    border-right: 0.05em solid #222;
+    border-left: 0.05em solid #222; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------*/
