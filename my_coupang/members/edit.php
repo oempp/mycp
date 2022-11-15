@@ -13,7 +13,6 @@ $u_addr2 = $_POST["u_addr2"];
 $u_addr3 = $_POST["u_addr3"];
 $reg_date = date("y-m-d");
 
-$only_pwd = $_GET["only_pwd"];
 
 /* 값 저장됐는지 확인 */
 
@@ -28,9 +27,7 @@ echo "<p>우편번호 : " . $ps_code . "</p>";
 echo "<p>주소 : " . $u_addr2 . "</p>";
 echo "<p>주소 : " . $u_addr3 . "</p>";
 echo "<p>최근 정보 수정일 : " . $reg_date . "</p>";
-echo "only_pwd : " . $only_pwd . "</p>";
 
-exit;
 
 
 //DB접속
@@ -44,6 +41,14 @@ $result = mysqli_query($dbcon, $sql_);
 //DB에서 데이터 가져오기
 $array = mysqli_fetch_array($result); //배열
 
+if ($u_pwd != $array['pwd']) {
+    echo "
+    <script type=\"text/javascript\">
+    alert(\"현재 비밀번호가 일치하지 않습니다.\");
+    location.href = \"info.php\";
+    </script>";
+    exit;
+} 
 
 //비밀번호 맞는지 체크함
 if ($u_pwd) {
@@ -54,35 +59,45 @@ if ($u_pwd) {
         location.href = \"info.php\";
         </script>";
         exit;
-    }
-
-    //비밀번호만 변경 시 
-    else if ($u_pwd == $array['pwd'] && $u_chg_pwd == $u_chk_pwd) {
-        $sqlpwd = "update members set pwd='$u_chg_pwd' where idx='$s_idx';";
-        $result = mysqli_query($dbcon, $sqlpwd);
-        echo "
+    } else {
+        //비밀번호만 변경 시 
+        if ($u_pwd == $array['pwd'] && $u_chg_pwd == $u_chk_pwd) {
+            $sqlpwd = "update members set pwd='$u_chg_pwd' where idx='$s_idx';";
+            $result = mysqli_query($dbcon, $sqlpwd);
+            echo "
         <script type=\"text/javascript\">
         alert(\"비밀번호가 변경되었습니다.\");
         location.href = \"info.php\";
         </script>";
-        exit;
-    }
-}
+            exit;
+        }
 
-//비밀번호 값 없이 정보 수정할때
-else if (!$u_pwd) {
-    //비밀번호 X
-    $sql_noPwd = "update members set gender='$u_gender', mobile='$u_tel', email='$u_email', birth='$u_birth', pscode='$ps_code', addr_b='$u_addr2', addr_d='$u_addr3' where idx='$s_idx';";
-    $result = mysqli_query($dbcon, $sql_noPwd);
-    echo "
+        //비밀번호 값 없이 정보 수정할때
+        else if (!$u_chg_pwd) {
+            //비밀번호 X
+            $sql_noPwd = "update members set gender='$u_gender', mobile='$u_tel', email='$u_email', birth='$u_birth', pscode='$ps_code', addr_b='$u_addr2', addr_d='$u_addr3' where idx='$s_idx';";
+            $result = mysqli_query($dbcon, $sql_noPwd);
+            echo "
     <script type=\"text/javascript\">
     alert(\"정보가 변경되었습니다.\");
     location.href = \"info.php\";
     </script>";
-    exit;
+            exit;
+        }
+    }
 }
 
-//비밀번호 입력시
+else {
+    echo "
+    <script type=\"text/javascript\">
+    alert(\"현재 비밀번호를 입력해주세요.\");
+    location.href = \"info.php\";
+    </script>";
+}
+
+
+
+/* //비밀번호 입력시
 $sql = "update members set pwd='$u_chg_pwd', gender='$u_gender', mobile='$u_tel', email='$u_email', birth='$u_birth', pscode='$ps_code', addr_b='$u_addr2', addr_d='$u_addr3' where idx='$s_idx';";
 
 
@@ -95,3 +110,4 @@ echo "
 alert(\"수정 완료.\");
 location.href = \"info.php\";
 </script>";
+ */

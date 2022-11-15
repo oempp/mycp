@@ -68,7 +68,7 @@ include "inc/session.php"
                     // pager colorVal
                     var colorVal = "#eca946";
 
-                    //슬라이드에 따라 백그라운드 색상 변경
+                    //슬라이드에 따라 백그라운드 색상 변
                     // 슬라이드 인덱스 값 저장
                     switch (bxSlider.getCurrentSlide()) {
 

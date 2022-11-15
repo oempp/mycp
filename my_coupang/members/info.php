@@ -258,10 +258,9 @@ $array = mysqli_fetch_array($result);
                 dsp_ck.innerHTML = "";
             }
         }
-
     </script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
         var paddingVal = "185px";
         $(document).ready(function() {
 
@@ -326,7 +325,6 @@ $array = mysqli_fetch_array($result);
             border-style: none;
             width: 800px;
             height: auto;
-            background-color: rgb(255, 243, 213);
             margin: 50px auto;
         }
 
@@ -365,7 +363,13 @@ $array = mysqli_fetch_array($result);
             height: 50px;
         }
 
-        label {
+        .btn3 {
+            margin-left: 20px;
+            width: 80px;
+            height: 30px;
+        }
+
+        label {            
             display: inline-block;
             width: 180px;
             height: 20px;
@@ -405,6 +409,12 @@ $array = mysqli_fetch_array($result);
             display: block;
             width: 200px;
             margin: 0px auto 20px;
+
+        }
+
+        .right_pstn {
+            font-size: 14px;
+            text-align: right;
         }
 
         /*        .confirm_ck_pwd {
@@ -447,7 +457,7 @@ $array = mysqli_fetch_array($result);
                         <label for="user_info_chkPwd">비밀번호 확인</label>
                         <input class="input_pwd" id="user_info_chkPwd" name="u_chk_pwd" type="password" placeholder="비밀번호 확인" onkeyup="pwd_check(this.value)">
                         <br><span id="dsp_ck_pwd"></span>
-                        <br><button class="pwd_btn" type="submit" >비밀번호 변경</button>
+                        <br><button class="pwd_btn" type="submit">비밀번호 변경</button>
                     </p>
                     <p><label for="user_born">성별<span class="red_dot">*</span></label>
                         <input class="" id="m" name="gender" type="radio" value="male" <?php if ($array['gender'] == "m" || $array['gender'] == "남") echo " checked" ?>>남
@@ -496,7 +506,7 @@ $array = mysqli_fetch_array($result);
                         <br><span id="err_adrs3" class="err_txt"></span><span class="only_width"></span> ※ 추가 배송지는 <a href="">[배송지]</a> 설정에서 추가 할 수 있습니다.
 
                     </p>
-                    <p>
+                    <p style="font-size: 16px; padding-bottom : 30px;">
                         회원정보변경 안내<br>
                         쿠팡포인트 회원 주소 정보는 신세계포인트 사이트에서 변경하실 수 있습니다.<br>
                         배송지 정보는 '나의 정보관리 > 배송지 관리' 메뉴에서 추가/수정/삭제하실 수 있습니다.<br>
@@ -505,9 +515,9 @@ $array = mysqli_fetch_array($result);
                     <p>
                         <span class="btn_pstn"><button class="btn2" type="submit">저장</button></span>
                     </p>
-                    <!--                     <button class="btn2" type="button" onclick="history.back()">뒤로가기</button>
-                    <button class="btn2" type="button" onclick="mem_del()">회원탈퇴</button>
-                    <br><span id="err_btn2" class="err_txt"></span> -->
+                    <p class="right_pstn">탈퇴를 원하시면 우측의 회원탈퇴 버튼을 눌러주세요.<button class="btn3" type="button" onclick="mem_del()">회원탈퇴</button>
+                        <span class="btn_pstn"><button class="btn2" type="button" onclick="history.back()">뒤로가기</button></span>
+                    </p>                 
                 </fieldset>
             </form>
         </section>
