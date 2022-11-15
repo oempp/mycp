@@ -115,7 +115,6 @@ include "../inc/session.php";
 
         //비밀번호 정규식 체크
         function pwdFormCheck(pwd) {
-
             //최소 8 자, 하나 이상의 문자, 하나의 숫자 및 하나의 특수 문자 정규식
             var CHECK_TYPE_PWD = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 

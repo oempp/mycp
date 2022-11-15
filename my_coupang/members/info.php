@@ -34,11 +34,15 @@ $array = mysqli_fetch_array($result);
     <script type="text/javascript" src="../js/cupang_jquery.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $("input").focusin(function () {
-                $(this).css({border : "2px solid blue"});
+            $("input").focusin(function() {
+                $(this).css({
+                    border: "2px solid blue"
+                });
             })
-            $("input").focusout(function () {
-                $(this).css({border : "2px solid #969696"});
+            $("input").focusout(function() {
+                $(this).css({
+                    border: "2px solid #969696"
+                });
             })
         });
     </script>
@@ -176,7 +180,8 @@ $array = mysqli_fetch_array($result);
         }
 
         //비밀번호 정규식 체크
-        function pwdFormCheck(pwd) { //최소 8 자, 하나 이상의 문자, 하나의 숫자 및 하나의 특수 문자 정규식
+        function pwdFormCheck(pwd) {
+            //최소 8 자, 하나 이상의 문자, 하나의 숫자 및 하나의 특수 문자 정규식
             var CHECK_TYPE_PWD = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
             var dsp = document.getElementById("dsp_pwd");
@@ -185,15 +190,22 @@ $array = mysqli_fetch_array($result);
             var pwd_val = document.getElementById("user_info_chkPwd").value;
 
             /* 비밀번호 변경 시 값 있을때만 */
+
+
+
+            /* 비밀번호 변경 시 값 있을때만 */
             if (pwd) {
                 if (!CHECK_TYPE_PWD.test(pwd)) {
                     dsp.innerHTML = '영문/숫자/특수문자를 포함한 8자이상 20자리 이하<br>';
                     dsp.className = 'redTxt';
-                } else if (pwd == g_id.value) {
-                    dsp.innerHTML = '비밀번호는 아이디(이메일)와 동일하게 사용할 수 없습니다.';
-                    dsp.className = 'redTxt';
-                } else {
-                    dsp.innerHTML = '사용 가능한 비밀번호입니다.';
+                }
+                /*                 
+                                else if (pwd == <?php echo $s_name; ?>) {
+                                    dsp.innerHTML = '비밀번호는 아이디(이메일)와 동일하게 사용할 수 없습니다.<br>';
+                                    dsp.className = 'redTxt';
+                                } */
+                else {
+                    dsp.innerHTML = '사용 가능한 비밀번호입니다.<br>';
                     dsp.className = 'green_txt';
                 }
                 if (pwd_val) {
@@ -207,6 +219,26 @@ $array = mysqli_fetch_array($result);
                 }
             } else dsp.innerHTML = "";
 
+
+        }
+
+        function fncGetXMLHttpRequest() {
+            if (window.ActiveXObject) {
+                try {
+                    return new ActiveXObject("Msxml2.XMLHTTP");
+                } catch (e) {
+                    try {
+                        return new ActiveXObject("Microsoft.XMLHTTP");
+                    } catch (e1) {
+                        return null;
+                    }
+                }
+                //IE 외 파이어폭스 오페라 같은 브라우저에서 XMLHttpRequest 객체 구하기
+            } else if (window.XMLHttpRequest) {
+                return new XMLHttpRequest();
+            } else {
+                return null;
+            }
         }
 
         //비밀번호 확인 체크
@@ -225,19 +257,34 @@ $array = mysqli_fetch_array($result);
             } else {
                 dsp_ck.innerHTML = "";
             }
-
-
         }
+
+    </script>
+
+<script type="text/javascript">
+        var paddingVal = "185px";
+        $(document).ready(function() {
+
+            $("#user_info_pwd").focusin(function() {
+                $("#dsp_pwd").css({
+                    paddingLeft: paddingVal
+                });
+            });
+            $("#user_info_chkPwd").focusin(function() {
+                $("#dsp_ck_pwd").css({
+                    paddingLeft: paddingVal
+                });
+            });
+        });
     </script>
 
     <!-- CSS -->
-
     <style type="text/css">
-
         input {
             outline: none;
             border: 2px solid #969696;
         }
+
         .redTxt {
             font-size: 14px;
             color: red;
@@ -348,6 +395,7 @@ $array = mysqli_fetch_array($result);
         }
 
         .pwd_btn {
+            display: block;
             margin-left: 190px;
             width: 150px;
             height: 30px;
@@ -381,7 +429,7 @@ $array = mysqli_fetch_array($result);
         </section>
 
         <section class="body_txtBox">
-            <form name="edit_form" action="/web_project/members/edit.php" method="POST" onsubmit="return edit_formCheck()">
+            <form name="edit_form" action="edit.php" method="POST" onsubmit="return edit_formCheck()">
                 <fieldset class="fdset_bg">
                     <legend>회원정보</legend>
                     <!-- get 방식 데이터 저장 -->
@@ -391,15 +439,15 @@ $array = mysqli_fetch_array($result);
                     <p><span class="only_width">이름<span class="red_dot">*</span></span><b><?php echo $array['name']; ?></b>
                     </p>
                     <p><label for="user_pwd">현재 비밀번호<span class="red_dot">*</span></label>
-                        <input class="input_pwd" id="user_pwd" name="u_pwd" type="password" placeholder="현재 비밀번호*">
-                        <br><span id="err_pwd" class="err_txt"></span>
+                        <input class="input_pwd" id="user_pwd" name="u_pwd" type="password" placeholder="현재 비밀번호*"><br>
+
                         <label for="user_info_pwd">새 비밀번호</label>
-                        <input class="input_pwd" id="user_info_pwd" name="u_pwd" type="password" placeholder="새 비밀번호" onkeyup="pwdFormCheck(this.value)">
-                        <br><span id="dsp_pwd"></span><span id="err_pwd" class="err_txt"></span>
+                        <input class="input_pwd" id="user_info_pwd" name="u_chg_pwd" type="password" placeholder="새 비밀번호" onkeyup="pwdFormCheck(this.value)">
+                        <br><span id="dsp_pwd"></span><br>
                         <label for="user_info_chkPwd">비밀번호 확인</label>
                         <input class="input_pwd" id="user_info_chkPwd" name="u_chk_pwd" type="password" placeholder="비밀번호 확인" onkeyup="pwd_check(this.value)">
                         <br><span id="dsp_ck_pwd"></span>
-                        <br><button class="pwd_btn" type="button">비밀번호 변경</button>
+                        <br><button class="pwd_btn" type="submit" >비밀번호 변경</button>
                     </p>
                     <p><label for="user_born">성별<span class="red_dot">*</span></label>
                         <input class="" id="m" name="gender" type="radio" value="male" <?php if ($array['gender'] == "m" || $array['gender'] == "남") echo " checked" ?>>남

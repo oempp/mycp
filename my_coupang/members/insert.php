@@ -22,11 +22,11 @@ $u_1st_addr = $_POST["u_1st_addr"];
 $u_2nd_addr = $_POST["u_2nd_addr"];
 $reg_date = date("y-m-d");
 
-isset($u_email)? $u_email:"n/a";
+isset($u_email)? $u_email:"";
 if ($u_email =="n/a@n/a") $u_email = $u_id;
-isset($u_pscode)? $u_pscode:"n/a";
-isset($u_1st_addr)? $u_1st_addr:"n/a";
-isset($u_2nd_addr)? $u_2nd_addr:"n/a";
+isset($u_pscode)? $u_pscode:"";
+isset($u_1st_addr)? $u_1st_addr:"";
+isset($u_2nd_addr)? $u_2nd_addr:"";
 $a = "[ 완료 ]"."<hr>";
 // document.write() == echo
 

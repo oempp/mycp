@@ -82,7 +82,7 @@
                 <!-- 로그인 후 -->
             <?php } else { ?>
                 <p>
-                    <b><span><?php echo $s_name; ?> 님 </b><a href="../login/logout.php"> 로그아웃</a>                      
+                    <b><span><a href="mypage.php"><?php echo $s_name; ?></a> 님 </b><a href="../login/logout.php"> 로그아웃</a>                      
                     <span class=""><a href="../service/user_service.php">고객센터</a></span>
                 </p>
             <?php } ?>
@@ -110,13 +110,13 @@
                     </p>
                     <!-- 관리자 로그인 -->
                 <?php } else if ($s_idx == 1) { ?>
-                    <p><b style="font-size: 20px;">><?php echo $s_name; ?></b> 님 안녕하세요.</span><a href="../login/logout.php">로그아웃</a>
+                    <p><b style="font-size: 20px;"><?php echo $s_name; ?></b> 님 안녕하세요.</span><a href="../login/logout.php">로그아웃</a>
                         <a href="admin/admin.php">관리자 페이지로</a>
                     </p>
                     <!-- 로그인 후 -->
                 <?php } else { ?>
                     <p>
-                        <span><b style="font-size: 20px;"><?php echo $s_name; ?></b> 님 쿠팡 방문을 환영합니다.
+                        <span><b style="font-size: 20px;"><a href="mypage.php"><?php echo $s_name; ?></a></b> 님 쿠팡 방문을 환영합니다.
                             <a href="members/info.php" target="_blank">회원정보</a></span>
                     </p>
                 <?php } ?>

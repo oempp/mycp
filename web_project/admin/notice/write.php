@@ -123,7 +123,7 @@ include "../inc/admin_check.php";
 <body>
 
 
-    <form name="notice_form" action="insert.php" method="get" onsubmit="return notice_check()">
+    <form name="notice_form" action="insert.php" method="get" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset class="bg">
             <legend>공지사항</legend>
            
@@ -139,6 +139,9 @@ include "../inc/admin_check.php";
             <p><label for="n_content">내용</label>
                 <textarea class="n_content" id="n_content" name="n_content" cols="60" row="10"></textarea>
                 <br><span id="err_pwd" class="err_txt"></span>
+            </p>
+            <p><label for="n_content">파일첨부</label>
+                <input type="file" id="up_file" name="up_file">
             </p>
             <label for=""></label>
             <button class="btn2" type="submit">등록하기</button>

@@ -82,7 +82,7 @@
                 <!-- 로그인 후 -->
             <?php } else { ?>
                 <p>
-                    <b><span><?php echo $s_name; ?> 님 </b><a href="login/logout.php"> 로그아웃</a>                      
+                    <b><span><a href="members/mypage.php"><?php echo $s_name; ?></a> 님 </b><a href="login/logout.php"> 로그아웃</a>                      
                     <span class=""><a href="service/user_service.php">고객센터</a></span>
                 </p>
             <?php } ?>
@@ -116,7 +116,7 @@
                     <!-- 로그인 후 -->
                 <?php } else { ?>
                     <p>
-                        <span><b style="font-size: 20px;"><?php echo $s_name; ?></b> 님 쿠팡 방문을 환영합니다.
+                        <span><b style="font-size: 20px;"><a href="members/mypage.php"><?php echo $s_name; ?></a></b> 님 쿠팡 방문을 환영합니다.
                             </span>
                     </p>
                 <?php } ?>
