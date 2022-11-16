@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "command": "chrome",
+  "windows": {
+    "command": "C:/Program Files/Google/Chrome/Application/chrome.exe" // 브라우저 위치
+  },
+  "args": ["localhost/${relativeFile}"], // relativeFile : 현재 열려있는 파일 기준
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  }
+}
