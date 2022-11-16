@@ -18,239 +18,11 @@
     <link rel="stylesheet" type="text/css" href="../css/main_style.css">
     <!-- maincategory.css -->
     <link rel="stylesheet" type="text/css" href="../css/main_category_list.css">
+    <!-- detail_product -->
+    <link rel="stylesheet" type="text/css" href="../css/detail_product.css">
 
     <style type="text/css">
-        .product_bg {
-            display: flex;
-            justify-content: center;
-            width: 1200px;
-            height: 900px;
-            background: darkgreen;
-            margin: auto;
-        }
 
-        .product_img_bg {
-            display: block;
-            width: 600px;
-            height: 850px;
-            background-color: rgb(222, 222, 222);
-            margin: 10px;
-        }
-
-        .product_img {
-            margin: auto;
-            width: 580px;
-            height: 600px;
-            background-color: #346AFF;
-        }
-
-        .product_pager {
-            margin: 10px auto;
-            width: 580px;
-            height: 80px;
-            background-color: #346AFF;
-        }
-
-        .product_review {
-            margin: 10px auto;
-            width: 580px;
-            height: 50px;
-            line-height: 50px;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            font-size: 20px;
-        }
-
-        .product_rel_evt {
-            margin: 10px auto;
-            width: 580px;
-            height: 80px;
-            line-height: 80px;
-            font-size: 20px;
-            border-bottom: 1px solid black;
-        }
-
-        .proruct_txt {
-            margin: 10px;
-            width: 850px;
-            height: 750px;
-            background-color: rgb(0, 222, 222);
-        }
-
-
-        .banner_ {
-            width: auto;
-            height: 100px;
-            margin: auto;
-
-            background-color: darkorange;
-        }
-
-        .produnct_info_bg {
-            position: relative;
-            width: 1280px;
-            height: auto;
-            margin: auto;
-            background-color: cornsilk;
-        }
-
-        .side_opt {
-            position: relative;
-            width: 300px;
-            height: 800px;
-            background-color: aqua;
-            float: right;
-        }
-
-        .produnct_info {
-            width: 960px;
-            height: 2000px;
-            background-color: cornflowerblue;
-            margin: 10px;
-        }
-
-        .produnct_sale {
-            width: 1240px;
-            height: 400px;
-            background-color: cornflowerblue;
-            margin: 10px auto;
-        }
-
-        .produnct_review {
-            width: 1240px;
-            height: 400px;
-            background-color: cornflowerblue;
-            margin: 10px auto;
-        }
-
-        .other_produnct_info_bg {
-            width: 1240px;
-            height: 500px;
-            margin: auto;
-            background-color: cornflowerblue;
-        }
-
-        .product_name {
-            margin: 20px;
-            font-size: 30px;
-        }
-
-        .product_price {
-            margin: 20px;
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .product_chk_shp {
-            margin: 20px;
-            font-size: 20px;
-        }
-
-        .product_sale_info {
-            margin: 20px;
-            font-size: 30px;
-        }
-
-        .product_shipping_info {
-            margin: 20px;
-            font-size: 30px;
-        }
-
-        .product_btn_styBox {
-            height: 60px;
-            margin: 20px;
-        }
-
-        .proruct_txt select {
-            width: 280px;
-            height: 30px;
-        }
-
-        .select_txt {
-            margin: 10px 20px;
-            height: 30px;
-            font-size: 20px;
-        }
-
-        .select_complete {
-            margin: 40px 20px;
-            height: 80px;
-            background-color: cadetblue;
-        }
-
-        .product_sum_price {
-            margin: 30px 20px;
-            font-size: 20px;
-            text-align: right;
-        }
-
-        .product_sum_price_num {
-            font-size: 40px;
-            color: red;
-
-        }
-
-        .product_amount {
-            width: 40px;
-            height: 30px;
-            font-size: 20px;
-            text-align: center;
-            outline: 1px solid grey;
-        }
-
-        input:focus {
-            outline: 1px solid grey;
-        }
-
-        /* outline 테두리 속성 수정 */
-
-
-        /* outline 테두리 없애기 */
-        .amount_btn {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            font-size: 20px;
-            text-align: center;
-            border: 1px solid grey;
-        }
-
-        .btn_sty1 {
-            float: left;
-            display: inline-block;
-            text-align: center;
-            width: 210px;
-            height: 60px;
-            background-color: black;
-            color: white !important;
-            font-size: 18px;
-            line-height: 60px;
-        }
-
-        .btn_sty2 {
-            float: left;
-            display: inline-block;
-            text-align: center;
-            width: 210px;
-            height: 60px;
-            background-color: #346AFF;
-            color: white !important;
-            font-size: 18px;
-            line-height: 60px;
-        }
-
-        .btn_sty3 {
-            float: left;
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            box-sizing: border-box;
-            background-color: #ffffff;
-            border: 1px solid #346AFF;
-            text-align: center;
-
-        }
     </style>
 
     <!-- javascript -->
@@ -301,6 +73,46 @@
                     color: "black"
                 });
             });
+
+            $("#amount_minus").hover(function() {
+                $(this).css({
+                    color: "#346AFF"
+                });
+            }, function() {
+                $(this).css({
+                    color: "black"
+                });
+            });
+
+            /* banner slider */
+            var BxSlider = $(".bx_slider_mainImg").bxSlider({
+                mode: "fade", // 가로 방향 수평 슬라이드
+                speed: 1000, // 이동 속도를 설정
+                pause: 3000, // 슬라이드가 보여지는 시간
+                pager: true, // 현재 위치 페이징 표시 여부 설정
+                moveSlides: 1, // 슬라이드 이동시 개수
+                infiniteLoop: true, //true | (false, true) | true면 마지막에서 첫번째로 전환 그 반대도 동일, 무한루프
+                //slideWidth: 100,   // 슬라이드 너비
+                //minSlides: 4,      // 최소 노출 개수
+                //maxSlides: 4,      // 최대 노출 개수
+                //slideMargin: 5,    // 슬라이드간의 간격
+                auto: true, // 자동 실행 여부
+                autoHover: false, // 마우스 호버시 정지 여부
+                controls: false, // 이전 다음 버튼 노출 여부
+                pagerCustom: ".product_pager", // 페이저
+
+                onSlideBefore: function() { // 슬라이드 전환 전 마다 콜백
+
+                    // 백그라운드 색상 변경 함수
+                    /*                 function changeBgColor(color) {
+                                        var color = $(".main_banner_bg").css({
+                                            transition: "1s",
+                                            backgroundColor: color
+                                        });
+                                    } */
+
+                }
+            });
         });
     </script>
 
@@ -326,20 +138,27 @@
         <section class="product_bg">
             <div class="product_img_bg">
                 <div class="product_img">
-                    <img src="" alt="">이미지
-                </div>
+                    <div class="bx_slider_mainImg">
+                        <img src="/my_coupang/images/producnts/P.00000001/P.00000001_main.jpg" alt="">
+                        <img src="/my_coupang/images/producnts/P.00000001/P.00000001_02.jpg" alt="">
+                        <img src="/my_coupang/images/producnts/P.00000001/P.00000001_04.jpg" alt="">
+                        <img src="/my_coupang/images/producnts/P.00000001/P.00000001_06.jpg" alt="">
+                        <img src="/my_coupang/images/producnts/P.00000001/P.00000001_08.jpg" alt="">
+                    </div>
 
-                <div class="product_pager">
-                    <p>페이저</p>
-                </div>
-                <div class="product_review">
-                    <p>고객 리뷰 (별점)</p>
-                </div>
-                <div class="product_rel_evt">
-                    <p>연관 상품</p>
+                    <div class="product_pager">
+                        <p>페이저</p>
+                        <p>페이저</p>
+                        <p>페이저</p>
+                    </div>
+                    <div class="product_review">
+                        <p>고객 리뷰 (별점)</p>
+                    </div>
+                    <div class="product_rel_evt">
+                        <p>연관 상품</p>
+                    </div>
                 </div>
             </div>
-
             <div class="proruct_txt">
                 <p class="product_name">상품 이름</p>
                 <p class="product_price">가격</p>
@@ -382,7 +201,25 @@
         <section class="banner_">배너</section>
         <section class="produnct_info_bg">
             <div class="side_opt">사이드 구매정보</div>
-            <div class="produnct_info">상품정보/혜택구매정보/리뷰</div>
+            <div class="produnct_info">상품정보/혜택구매정보/리뷰
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_info1.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_info2.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_info3.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_main.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_01.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_02.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_03.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_04.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_05.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_06.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_07.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_08.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_09.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_10.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_caution1.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_caution2.jpg" alt="">
+                <img src="/my_coupang/images/producnts/P.00000001/P.00000001_caution3.jpg" alt="">
+            </div>
             <div class="produnct_sale">혜택구매정보</div>
             <div class="produnct_review">리뷰</div>
         </section>
