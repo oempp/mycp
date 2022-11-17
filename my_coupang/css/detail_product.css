@@ -115,16 +115,19 @@
     margin: 10px auto;
 }
 
-.produnct_shp_info > p{
+.produnct_shp_info>p {
     padding: 10px 20px;
 }
 
 div h3 {
     font-size: 30px;
+
     margin: 30px 0;
+    border-top: 5px solid black;
+    padding: 20px 0;
 }
 
-.produnct_review {
+.produnct_review_bg {
     width: 1240px;
     height: auto;
     background-color: cornflowerblue;
@@ -168,7 +171,7 @@ div h3 {
 .other_produnct_info_bg {
 
     width: 1240px;
-    height: 500px;
+    height: auto;
     margin: auto;
     background-color: cornflowerblue;
 }
@@ -307,6 +310,17 @@ td {
     border-collapse: collapse
 }
 
+.Required_info,
+.shp_info,
+.exchange_returns {
+    background-color: #ededed;
+}
+
+.produnct_shp_info > p {
+    background-color: #ededed;
+}
+
+
 .Required_info td {
     width: 1040px;
     border: 1px solid black;
@@ -356,9 +370,10 @@ td {
 .board_list_set th,
 .board_list_set td,
 .pager {
-    padding: 10px;
+    padding: 30px 10px;
     text-align: center
 }
+
 
 .board_list_set,
 .pager {
@@ -376,7 +391,11 @@ td {
 }
 
 .no {
-    width: 60px
+    width: 30px
+}
+
+.ans {
+    width: 100px;
 }
 
 .b_title {
@@ -384,15 +403,15 @@ td {
 }
 
 .b_name {
-    width: 100px
+    width: 80px
 }
 
 .w_date {
-    width: 120px
+    width: 100px
 }
 
 .cnt {
-    width: 80px
+    width: 60px
 }
 
 .board_content_title {
@@ -405,9 +424,12 @@ a:hover {
 }
 
 .write_area {
-    width: 860px;
+    font-size: 20px;
+    width: auto;
+    margin: 20px auto;
+    padding: 0 20px;
     display: flex;
-    justify-content: space-between
+    justify-content: right;
 }
 
 .qna_write {
@@ -415,4 +437,15 @@ a:hover {
     padding: 20px;
     margin: auto;
     text-align: right;
+}
+
+.write_btn {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    background-color: black;
+    color: white;
 }

@@ -11,16 +11,18 @@ $p_code = isset($_GET["p_code"]) ? $_GET["p_code"] : "";
 //임시 p_code
 $p_code = "p.00000001";
 echo $p_code;
+
+
+
+///////////////////////////////// cmt 쿼리 /////////////////////////////////
 // 테이블 이름
 $table_name = "product_cmt";
-
 //쿼리 작성
 if ($p_code) {
     $sql = "select * from $table_name where p_code='$p_code';";
 } else {
     $sql = "select * from $table_name;";
-};
-
+}
 // 쿼리 전송
 $result = mysqli_query($dbcon, $sql);
 
@@ -85,7 +87,7 @@ if ($e_pageNum > $total_page) {
     <!-- mainp_codegory.css -->
     <link rel="stylesheet" type="text/css" href="../css/main_p_codegory_list.css">
     <!-- detail_product -->
-    <link rel="stylesheet" type="text/css" href="../css/detail_product.css?1">
+    <link rel="stylesheet" type="text/css" href="../css/detail_product.css?1243445">
 
     <style type="text/css">
 
@@ -190,6 +192,16 @@ if ($e_pageNum > $total_page) {
             if (isNaN(toNum)) $("#product_amount").val(0);
             else $("#product_amount").val(toNum);
             //console.log(toInt);
+        }
+
+        //리뷰 팝업
+        function cmt_popup() {
+            window.open('write_cmt.php', '상품 리뷰', 'width=500px, height=800px');
+        }
+
+        //문의 팝업
+        function qna_popup() {
+            window.open('write_qna.php', '문의남기기', 'width=500px, height=800px');
         }
     </script>
 </head>
@@ -386,7 +398,7 @@ if ($e_pageNum > $total_page) {
 
             </div>
 
-            <div class="produnct_sale">혜택구매정보
+            <div class="produnct_sale">
                 <div>
                     <h3>교환 및 반품 안내</h3>
                     <table class="exchange_returns">
@@ -433,17 +445,9 @@ if ($e_pageNum > $total_page) {
             </div>
         </section>
 
-
-
         <section>
-            상품 리뷰 / 댓글
-            <div class="produnct_review">리뷰
-                <h2>게시판</h2>
-                <p class="write_area">
-                    <span>전체 <?php echo $total; ?>개</span>
-                    <span><a href="write.php">[글쓰기]</a></span>
-                </p>
-
+            <div class="produnct_review_bg">
+                <h3>상품 리뷰</h3>
                 <?php
                 // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
                 $start = ($page - 1) * $list_num;
@@ -451,7 +455,7 @@ if ($e_pageNum > $total_page) {
                 // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
                 // limit 몇번부터, 몇 개 + 카테고리
                 // 쿼리 작성
-                if ($p_code) {
+                if ($p_code) { //상품 코드로 구분해서 맞는 댓글만 표시
                     $sql = "select * from $table_name where p_code='$p_code' order by idx desc limit $start, $list_num;";
                 } else {
                     $sql = "select * from $table_name order by idx desc limit $start, $list_num;";
@@ -464,13 +468,19 @@ if ($e_pageNum > $total_page) {
                 // pager : 글번호(역순)
                 // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
                 $i = $total - (($page - 1) * $list_num);
-                while ($array = mysqli_fetch_array($result)) {
+                ?>
+                <p class="write_area">
+                    <span><a href="#" onclick="cmt_popup()"><span class="write_btn">리뷰작성</span></a></span>
+                </p>
+
+                <?php while ($array = mysqli_fetch_array($result)) {
                 ?>
                     <p>
                         <span class="width_cmt_title"><?php echo $array["cmt_title"]; ?></span>
                         <!-- 사용자 아이디 숨기기 -->
-                        <span class="width_130"><b><?php $rplName = substr_replace($array["cmt_name"], "*********", 3);
-                                                    echo $rplName; ?></b></span>
+                        <span class="width_130"><b>
+                                <?php $rplName = substr_replace($array["cmt_name"], "*********", 3);
+                                echo $rplName; ?></b></span>
                         <span class="width_130"><?php echo $array["cmt_date"]; ?></span>
                         <span class="width_50"><?php echo $array["cmt_cnt"]; ?></span>
                     </p>
@@ -513,69 +523,86 @@ if ($e_pageNum > $total_page) {
         </section>
 
         <section class="other_produnct_info_bg">
-            상품 문의
+            <h3>상품 Q&A</h3>
+            <?php
+            // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
+            $start = ($page - 1) * $list_num;
+            $table_name = 'product_qna';
+            // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
+            // limit 몇번부터, 몇 개 + 카테고리
+            // 쿼리 작성
+            if ($p_code) { //상품 코드로 구분해서 맞는 댓글만 표시
+                $sql = "select * from $table_name where p_code='$p_code' order by idx desc limit $start, $list_num;";
+            } else {
+                $sql = "select * from $table_name order by idx desc limit $start, $list_num;";
+            };
+
+
+            // DB에 데이터 전송
+            $result = mysqli_query($dbcon, $sql);
+
+            // DB에서 데이터 가져오기
+            // pager : 글번호(역순)
+            // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
+            $j = $total - (($page - 1) * $list_num);
+            ?>
+            <p class="write_area">
+                <?php
+                ?>
+                <span>전체 (<?php echo $total; ?>)</span>
+                <span>답변완료 (<?php echo $total ?>)</span>
+                <span>답변대기 (<?php echo $total; ?>)</span><a href="#" onclick="qna_popup()"><span class="write_btn">문의 남기기</span></a>
+            </p>
             <!-- 테이블 게시판 -->
             <table class="board_list_set">
                 <tr class="board_list_title">
                     <th class="no">번호</th>
+                    <th class="ans">답변</th>
                     <th class="b_title">제목</th>
                     <th class="b_name">작성자</th>
                     <th class="w_date">날짜</th>
                     <th class="cnt">조회수</th>
                 </tr>
                 <?php
-                // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
-                $start = ($page - 1) * $list_num;
-
-                // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
-                // limit 몇번부터, 몇 개 + 카테고리
-                // 쿼리 작성
-                if ($p_code) {
-                    $sql = "select * from $table_name where p_code='$p_code' order by idx desc limit $start, $list_num;";
-                } else {
-                    $sql = "select * from $table_name order by idx desc limit $start, $list_num;";
-                };
-
-
-                // DB에 데이터 전송
-                $result = mysqli_query($dbcon, $sql);
-
-                // DB에서 데이터 가져오기
-                // pager : 글번호(역순)
-                // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
-                $i = $total - (($page - 1) * $list_num);
                 while ($array = mysqli_fetch_array($result)) {
                 ?>
                     <tr class="board_list_content">
-                        <td><?php echo $i; ?></td>
+                        <td><?php echo $j; ?></td>
+                        <td><?php if (!$array['qna_answer_check']) echo "답변대기중";
+                            else echo "답변완료"; ?></td>
                         <td class="board_content_title" style="text-align : left;">
                             <a href="view.php?b_idx=<?php echo $array["idx"]; ?>">
-                                [<?php
-                                    if ($array["p_code"] == "normal") {
+                                [ <?php
+                                    if ($array["qna_cate"] == "q_basic") {
                                         echo "일반";
-                                    } else if ($array["p_code"] == "music") {
-                                        echo "음악";
-                                    } else if ($array["p_code"] == "movie") {
-                                        echo "영화";
+                                    } else if ($array["qna_cate"] == "q_product") {
+                                        echo "상품문의";
+                                    } else if ($array["qna_cate"] == "q_shipping") {
+                                        echo "배송문의";
+                                    } else if ($array["qna_cate"] == "q_exchange") {
+                                        echo "교환/반품문의";
+                                    } else if ($array["qna_cate"] == "q_etc") {
+                                        echo "기타문의";
                                     };
-                                    ?>]
-                                <?php echo $array["cmt_title"]; ?>
+                                    ?> ]
+                                <?php echo $array["qna_title"]; ?>
                             </a>
                         </td>
-                        <td><?php echo $array["cmt_name"]; ?></td>
-                        <?php $cmt_date = substr($array["cmt_date"], 0, 10); ?>
-                        <td><?php echo $cmt_date; ?></td>
-                        <td><?php echo $array["cmt_cnt"]; ?></td>
+                        <td><?php $rplName = substr_replace($array["qna_name"], "*********", 3);
+                            echo $rplName; ?></b></span></td>
+                        <?php $qna_date = substr($array["qna_date"], 0, 10); ?>
+                        <td><?php echo $qna_date; ?></td>
+                        <td><?php echo $array["qna_cnt"]; ?></td>
                     </tr>
-                    <tr class="board_list_content"><?php echo $array["cmt_content"]; ?></td>
+                    <tr class="board_list_content"><?php echo $array["qna_content"]; ?></td>
                     </tr>
                 <?php
-                    $i--;
+                    $j--;
                 };
                 ?>
             </table>
             <!-- 테이블 게시판 -->
-            <p class="qna_write"><a href="write.php">[문의 남기기]</a></p>
+
         </section>
     </div>
 </body>
