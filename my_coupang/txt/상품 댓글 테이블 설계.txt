@@ -1,0 +1,26 @@
+DB명 : front
+
+Table명 : product_cmt
+-------------------------------------------------------------------
+항목 | 필드명 | 데이터타입(길이) | 제약
+-------------------------------------------------------------------
+인덱스 | idx | int | AI, PK
+상품코드 | p_code | varchar(20) | NN
+작성자 | cmt_name | varchar(20) | NN
+비밀번호 | cmt_pwd | varchar(20) | NN
+제목 | cmt_title | varchar(255) | NN
+내용 | cmt_content | text | NN
+작성일자 | cmt_date | datetime | NN
+조회수 | cmt_cnt | int | default 0
+
+* 테이블 생성 : product_cmt
+create table product_cmt(
+    idx int auto_increment primary key,
+    p_code varchar(20) not null,
+    cmt_name varchar(20) not null,
+    cmt_pwd varchar(20) not null,
+    cmt_title varchar(255) not null,
+    cmt_content text not null,
+    cmt_date date not null,
+    cmt_cnt int default 0
+);

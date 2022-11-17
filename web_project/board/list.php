@@ -5,14 +5,14 @@ include "../inc/session.php";
 include "../inc/dbcon.php";
 
 // 카테고리
-$cate = isset($_GET["cate"])? $_GET["cate"] : "";
+$p_code = isset($_GET["cate"])? $_GET["cate"] : "";
 
 // 테이블 이름
 $table_name = "board";
 
 // 쿼리 작성
-if($cate){
-    $sql = "select * from $table_name where cate='$cate';";
+if($p_code){
+    $sql = "select * from $table_name where cate='$p_code';";
 } else{
     $sql = "select * from $table_name;";
 };
@@ -127,10 +127,10 @@ if($e_pageNum > $total_page){
 
     <p>
         <select name="cate" id="cate" class="cate" onchange="sel_cate()">
-            <option value=""<?php if($cate == "") echo " selected"; ?>>전체</option>
-            <option value="normal"<?php if($cate == "normal") echo " selected"; ?>>일반</option>
-            <option value="music"<?php if($cate == "music") echo " selected"; ?>>음악</option>
-            <option value="movie"<?php if($cate == "movie") echo " selected"; ?>>영화</option>
+            <option value=""<?php if($p_code == "") echo " selected"; ?>>전체</option>
+            <option value="normal"<?php if($p_code == "normal") echo " selected"; ?>>일반</option>
+            <option value="music"<?php if($p_code == "music") echo " selected"; ?>>음악</option>
+            <option value="movie"<?php if($p_code == "movie") echo " selected"; ?>>영화</option>
         </select>
     </p>
 
@@ -149,8 +149,8 @@ if($e_pageNum > $total_page){
             // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
             // limit 몇번부터, 몇 개 + 카테고리
             // 쿼리 작성
-            if($cate){
-                $sql = "select * from $table_name where cate='$cate' order by idx desc limit $start, $list_num;";
+            if($p_code){
+                $sql = "select * from $table_name where cate='$p_code' order by idx desc limit $start, $list_num;";
             } else{
                 $sql = "select * from $table_name order by idx desc limit $start, $list_num;";
             };
@@ -196,25 +196,25 @@ if($e_pageNum > $total_page){
     // pager : 이전 페이지
     if($page <= 1){
     ?>
-    <a href="list.php?cate=<?php echo $cate; ?>&page=1">이전</a>
+    <a href="list.php?cate=<?php echo $p_code; ?>&page=1">이전</a>
     <?php } else{ ?>
-    <a href="list.php?cate=<?php echo $cate; ?>&page=<?php echo ($page - 1); ?>">이전</a>
+    <a href="list.php?cate=<?php echo $p_code; ?>&page=<?php echo ($page - 1); ?>">이전</a>
     <?php }; ?>
 
     <?php
     // pager : 페이지 번호 출력
     for($print_page = $s_pageNum;  $print_page <= $e_pageNum; $print_page++){
     ?>
-    <a href="list.php?cate=<?php echo $cate; ?>&page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
+    <a href="list.php?cate=<?php echo $p_code; ?>&page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
     <?php }; ?>
 
     <?php
     // pager : 다음 페이지
     if($page >= $total_page){
     ?>
-    <a href="list.php?cate=<?php echo $cate; ?>&page=<?php echo $total_page; ?>">다음</a>
+    <a href="list.php?cate=<?php echo $p_code; ?>&page=<?php echo $total_page; ?>">다음</a>
     <?php } else{ ?>
-    <a href="list.php?cate=<?php echo $cate; ?>&page=<?php echo ($page + 1); ?>">다음</a>
+    <a href="list.php?cate=<?php echo $p_code; ?>&page=<?php echo ($page + 1); ?>">다음</a>
     <?php }; ?>
     </p>
 </body>

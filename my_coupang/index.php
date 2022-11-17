@@ -21,38 +21,46 @@ include "inc/session.php"
 
 
     <!-- javascript -->
-    <script type="text/javascript" src="js/jquery/jQuery-3.6.1.js">//제이쿼리</script>
-    <script type="text/javascript" src="src/js/jquery.bxslider.js">//bxslider 스크립트</script>
-    <script type="text/javascript" src="js/cupang.js">//폼 관련 스크립트 </script>
-    <script type="text/javascript" src="js/cupang_jquery.js">//제이쿼리 사용 스크립트</script>
+    <script type="text/javascript" src="js/jquery/jQuery-3.6.1.js">
+        //제이쿼리
+    </script>
+    <script type="text/javascript" src="src/js/jquery.bxslider.js">
+        //bxslider 스크립트
+    </script>
+    <script type="text/javascript" src="js/cupang.js">
+        //폼 관련 스크립트 
+    </script>
+    <script type="text/javascript" src="js/cupang_jquery.js">
+        //제이쿼리 사용 스크립트
+    </script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             //bxSlider 
             var bxSlider = $(".bx_slider").bxSlider({
-                mode: 'fade',// 가로 방향 수평 슬라이드
-                speed: 1000,        // 이동 속도를 설정
-                pause: 2500,         // 슬라이드가 보여지는 시간
-                pager: true,      // 현재 위치 페이징 표시 여부 설정
-                moveSlides: 1,     // 슬라이드 이동시 개수
+                mode: 'fade', // 가로 방향 수평 슬라이드
+                speed: 1000, // 이동 속도를 설정
+                pause: 2500, // 슬라이드가 보여지는 시간
+                pager: true, // 현재 위치 페이징 표시 여부 설정
+                moveSlides: 1, // 슬라이드 이동시 개수
                 infiniteLoop: true, //true | (false, true) | true면 마지막에서 첫번째로 전환 그 반대도 동일, 무한루프
                 //slideWidth: 100,   // 슬라이드 너비
                 //minSlides: 4,      // 최소 노출 개수
                 //maxSlides: 4,      // 최대 노출 개수
                 //slideMargin: 5,    // 슬라이드간의 간격
-                auto: true,        // 자동 실행 여부
-                autoHover: false,   // 마우스 호버시 정지 여부
-                controls: false,   // 이전 다음 버튼 노출 여부
+                auto: true, // 자동 실행 여부
+                autoHover: false, // 마우스 호버시 정지 여부
+                controls: false, // 이전 다음 버튼 노출 여부
                 pagerCustom: ".bx_pager", // 페이저
 
                 //onSliderLord: function () { }  //슬라이드 로드 될 때 마다 콜백
 
-                onSlideAfter: function () { //슬라이드 전환 될 때 마다 콜백
+                onSlideAfter: function() { //슬라이드 전환 될 때 마다 콜백
                     bxSlider.stopAuto();
                     bxSlider.startAuto();
                 },
 
-                onSlideBefore: function () {  // 슬라이드 전환 전 마다 콜백
+                onSlideBefore: function() { // 슬라이드 전환 전 마다 콜백
 
                     /* 임시 슬라이드 인덱스 표시 업데이트 */
                     var txt1 = document.getElementById("slider_index_num");
@@ -61,7 +69,8 @@ include "inc/session.php"
                     // 백그라운드 색상 변경 함수
                     function changeBgColor(color) {
                         var color = $(".main_images_bg").css({
-                            transition: "1s", backgroundColor: color
+                            transition: "1s",
+                            backgroundColor: color
                         });
                     }
 
@@ -80,23 +89,33 @@ include "inc/session.php"
                             $(".bx_pager").not(".main_images_cont1").find(".selectBox2").children("span").hide();
                             $(".bx_pager").not(".main_images_cont1").find(".selectBox3").children("span").hide();
                             /* txt color black */
-                            $(".bx_pager li").find("a").not(this).css({ color: "black" });
+                            $(".bx_pager li").find("a").not(this).css({
+                                color: "black"
+                            });
                             /* txt color change */
-                            $(".bx_pager li:eq(0)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(0)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont1").find(".selectBox1").children("span").show();
                             break;
 
-                        case 1: changeBgColor("#595882");
+                        case 1:
+                            changeBgColor("#595882");
                             /* txt color change */
-                            $(".bx_pager li:eq(0)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(0)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont1").find(".selectBox1").children("span").show();
                             $(".main_images_cont1").find(".selectBox2").children("span").show();
                             break;
-                        case 2: changeBgColor("#ffead5");
+                        case 2:
+                            changeBgColor("#ffead5");
                             /* txt color change */
-                            $(".bx_pager li:eq(0)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(0)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont1").find(".selectBox1").children("span").show();
                             $(".main_images_cont1").find(".selectBox2").children("span").show();
@@ -104,30 +123,41 @@ include "inc/session.php"
 
                             break;
 
-                        /* pager bullet 3~5 */
-                        case 3: changeBgColor("#d4e8f3");
+                            /* pager bullet 3~5 */
+                        case 3:
+                            changeBgColor("#d4e8f3");
                             /* hide boroder */
                             $(".bx_pager").not(".main_images_cont2").find(".selectBox1").children("span").hide();
                             $(".bx_pager").not(".main_images_cont2").find(".selectBox2").children("span").hide();
                             $(".bx_pager").not(".main_images_cont2").find(".selectBox3").children("span").hide();
                             /* txt color black */
-                            $(".bx_pager li").find("a").not(this).css({ color: "black" });
+                            $(".bx_pager li").find("a").not(this).css({
+                                color: "black"
+                            });
                             /* txt color change */
-                            $(".bx_pager li:eq(1)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(1)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont2").find(".selectBox1").children("span").show();
 
                             break;
-                        case 4: changeBgColor("#834fff");
+                        case 4:
+                            changeBgColor("#834fff");
                             /* txt color change */
-                            $(".bx_pager li:eq(1)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(1)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont2").find(".selectBox1").children("span").show();
                             $(".main_images_cont2").find(".selectBox2").children("span").show();
                             break;
-                        case 5: changeBgColor("#e6cdc8");
+                        case 5:
+                            changeBgColor("#e6cdc8");
                             /* txt color change */
-                            $(".bx_pager li:eq(1)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(1)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont2").find(".selectBox1").children("span").show();
                             $(".main_images_cont2").find(".selectBox2").children("span").show();
@@ -135,116 +165,160 @@ include "inc/session.php"
 
                             break;
 
-                        /* pager bullet 6~8 */
-                        case 6: changeBgColor("#f3c404");
+                            /* pager bullet 6~8 */
+                        case 6:
+                            changeBgColor("#f3c404");
                             /* hide boroder */
                             $(".bx_pager").not(".main_images_cont3").find(".selectBox1").children("span").hide();
                             $(".bx_pager").not(".main_images_cont3").find(".selectBox2").children("span").hide();
                             $(".bx_pager").not(".main_images_cont3").find(".selectBox3").children("span").hide();
                             /* txt color black */
-                            $(".bx_pager li").find("a").not(this).css({ color: "black" });
+                            $(".bx_pager li").find("a").not(this).css({
+                                color: "black"
+                            });
                             /* txt color change */
-                            $(".bx_pager li:eq(2)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(2)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont3").find(".selectBox1").children("span").show();
                             break;
-                        case 7: changeBgColor("#eaeef7");
+                        case 7:
+                            changeBgColor("#eaeef7");
                             /* txt color change */
-                            $(".bx_pager li:eq(2)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(2)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont3").find(".selectBox1").children("span").show();
                             $(".main_images_cont3").find(".selectBox2").children("span").show();
                             break;
-                        case 8: changeBgColor("#f7ede1");
+                        case 8:
+                            changeBgColor("#f7ede1");
                             /* txt color change */
-                            $(".bx_pager li:eq(2)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(2)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont3").find(".selectBox1").children("span").show();
                             $(".main_images_cont3").find(".selectBox2").children("span").show();
                             $(".main_images_cont3").find(".selectBox3").children("span").show();
                             break;
 
-                        /* pager bullet 9~11 */
-                        case 9: changeBgColor("#ca8a5c");
+                            /* pager bullet 9~11 */
+                        case 9:
+                            changeBgColor("#ca8a5c");
                             /* hide boroder */
                             $(".bx_pager").not(".main_images_cont4").find(".selectBox1").children("span").hide();
                             $(".bx_pager").not(".main_images_cont4").find(".selectBox2").children("span").hide();
                             $(".bx_pager").not(".main_images_cont4").find(".selectBox3").children("span").hide();
                             /* txt color black */
-                            $(".bx_pager li").find("a").not(this).css({ color: "black" });
+                            $(".bx_pager li").find("a").not(this).css({
+                                color: "black"
+                            });
                             /* txt color change */
-                            $(".bx_pager li:eq(3)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(3)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont4").find(".selectBox1").children("span").show();
                             break;
-                        case 10: changeBgColor("#dd630e");
+                        case 10:
+                            changeBgColor("#dd630e");
                             /* txt color change */
-                            $(".bx_pager li:eq(3)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(3)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont4").find(".selectBox1").children("span").show();
                             $(".main_images_cont4").find(".selectBox2").children("span").show();
                             break;
-                        case 11: changeBgColor("#00acac");
+                        case 11:
+                            changeBgColor("#00acac");
                             /* txt color change */
-                            $(".bx_pager li:eq(3)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(3)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont4").find(".selectBox1").children("span").show();
                             $(".main_images_cont4").find(".selectBox2").children("span").show();
                             $(".main_images_cont4").find(".selectBox3").children("span").show();
                             break;
 
-                        /* pager bullet 12~14 */
-                        case 12: changeBgColor("#000000");
+                            /* pager bullet 12~14 */
+                        case 12:
+                            changeBgColor("#000000");
                             /* hide boroder */
                             $(".bx_pager").not(".main_images_cont5").find(".selectBox1").children("span").hide();
                             $(".bx_pager").not(".main_images_cont5").find(".selectBox2").children("span").hide();
                             $(".bx_pager").not(".main_images_cont5").find(".selectBox3").children("span").hide();
                             /* txt color black */
-                            $(".bx_pager li").find("a").not(this).css({ color: "black" });
+                            $(".bx_pager li").find("a").not(this).css({
+                                color: "black"
+                            });
                             /* txt color change */
-                            $(".bx_pager li:eq(4)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(4)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont5").find(".selectBox1").children("span").show();
                             break;
-                        case 13: changeBgColor("#ffefa2");
+                        case 13:
+                            changeBgColor("#ffefa2");
                             /* txt color change */
-                            $(".bx_pager li:eq(4)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(4)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont5").find(".selectBox1").children("span").show();
                             $(".main_images_cont5").find(".selectBox2").children("span").show();
                             break;
-                        case 14: changeBgColor("#f5fdce");
+                        case 14:
+                            changeBgColor("#f5fdce");
                             /* txt color change */
-                            $(".bx_pager li:eq(4)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(4)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont5").find(".selectBox1").children("span").show();
                             $(".main_images_cont5").find(".selectBox2").children("span").show();
                             $(".main_images_cont5").find(".selectBox3").children("span").show();
                             break;
 
-                        /* pager bullet 15~17 */
-                        case 15: changeBgColor("#dff1fd");
+                            /* pager bullet 15~17 */
+                        case 15:
+                            changeBgColor("#dff1fd");
                             /* hide boroder */
                             $(".bx_pager").not("main_images_cont6").find(".selectBox1").children("span").hide();
                             $(".bx_pager").not("main_images_cont6").find(".selectBox2").children("span").hide();
                             $(".bx_pager").not("main_images_cont6").find(".selectBox3").children("span").hide();
                             /* txt color black */
-                            $(".bx_pager li").find("a").not(this).css({ color: "black" });
+                            $(".bx_pager li").find("a").not(this).css({
+                                color: "black"
+                            });
                             /* txt color change */
-                            $(".bx_pager li:eq(5)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(5)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont6").find(".selectBox1").children("span").show();
                             break;
-                        case 16: changeBgColor("#ebf3ca");
+                        case 16:
+                            changeBgColor("#ebf3ca");
                             /* txt color change */
-                            $(".bx_pager li:eq(5)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(5)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont6").find(".selectBox1").children("span").show();
                             $(".main_images_cont6").find(".selectBox2").children("span").show();
                             break;
-                        case 17: changeBgColor("#fff6b1");
+                        case 17:
+                            changeBgColor("#fff6b1");
                             /* txt color change */
-                            $(".bx_pager li:eq(5)").find("a").css({ color: colorVal });
+                            $(".bx_pager li:eq(5)").find("a").css({
+                                color: colorVal
+                            });
                             /* show border */
                             $(".main_images_cont6").find(".selectBox1").children("span").show();
                             $(".main_images_cont6").find(".selectBox2").children("span").show();
@@ -256,60 +330,80 @@ include "inc/session.php"
             //bxSlider end
 
             //bxSlider next page
-            $(".main_images_nextbtn").click(function () {
+            $(".main_images_nextbtn").click(function() {
                 bxSlider.goToNextSlide();
                 return false;
             });
             //넥스트 버튼 hover 일때 자동실행 false
 
             //next page image change hover
-            $(".main_images_nextbtn").hover(function () {
-                $(this).css({ background: "url(images/main/main_arrow_right_over_50x75.jpg) center no-repeat" });
-            }, function () {
-                $(this).css({ background: "url(images/main/main_arrow_right_50x75.jpg) center no-repeat" });
+            $(".main_images_nextbtn").hover(function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_right_over_50x75.jpg) center no-repeat"
+                });
+            }, function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_right_50x75.jpg) center no-repeat"
+                });
             });
 
             //bxSlider prev page
-            $(".main_images_prewbtn").click(function () {
+            $(".main_images_prewbtn").click(function() {
                 bxSlider.goToPrevSlide();
                 return false;
             });
 
             //prev page image change hover
-            $(".main_images_prewbtn").hover(function () {
-                $(this).css({ background: "url(images/main/main_arrow_left_over_50x75.jpg) center no-repeat" });
-            }, function () {
-                $(this).css({ background: "url(images/main/main_arrow_left_50x75.jpg) center no-repeat" });
+            $(".main_images_prewbtn").hover(function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_left_over_50x75.jpg) center no-repeat"
+                });
+            }, function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_left_50x75.jpg) center no-repeat"
+                });
             });
 
             //bxSlider pause
-            $(".main_images_pause").click(function () {
+            $(".main_images_pause").click(function() {
                 bxSlider.stopAuto();
-                $(this).css({ display: "none" });
+                $(this).css({
+                    display: "none"
+                });
                 $(".main_images_play").show();
                 return false;
             });
 
             //pause image change hover
-            $(".main_images_pause").hover(function () {
-                $(this).css({ background: "url(images/main/main_arrow_pause_over_50x75.jpg) center no-repeat" });
-            }, function () {
-                $(this).css({ background: "url(images/main/main_arrow_pause_50x75.jpg) center no-repeat" });
+            $(".main_images_pause").hover(function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_pause_over_50x75.jpg) center no-repeat"
+                });
+            }, function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_pause_50x75.jpg) center no-repeat"
+                });
             });
 
             //bxSlider play
-            $(".main_images_play").click(function () {
+            $(".main_images_play").click(function() {
                 bxSlider.startAuto();
-                $(this).css({ display: "none" });
+                $(this).css({
+                    display: "none"
+                });
                 $(".main_images_pause").show();
                 return false;
             });
 
             //prev page image change hover
-            $(".main_images_play").hover(function () {
-                $(this).css({ background: "url(images/main/main_arrow_play_over_50x75.jpg) center no-repeat" });
-            }, function () {
-                $(this).css({ background: "url(images/main/main_arrow_play_50x75.jpg) center no-repeat" });
+            $(".main_images_play").hover(function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_play_over_50x75.jpg) center no-repeat"
+                });
+            }, function() {
+                $(this).css({
+                    background: "url(images/main/main_arrow_play_50x75.jpg) center no-repeat"
+                });
             });
 
             /*             //인덱스 값 가져오기
@@ -328,102 +422,115 @@ include "inc/session.php"
             /* ctg_view cont slide */
             for (var i = 1; i <= $(".ctg_view_contbox").length; i++) {
                 var contboxSlider = $(".ctg_view_contbox_slider0" + i + "").bxSlider({
-                    mode: "horizontal",// 가로 방향 수평 슬라이드
-                    speed: 2000,        // 이동 속도를 설정
-                    pause: 4000,         // 슬라이드가 보여지는 시간
-                    pager: false,      // 현재 위치 페이징 표시 여부 설정
-                    moveSlides: 1,     // 슬라이드 이동시 개수
+                    mode: "horizontal", // 가로 방향 수평 슬라이드
+                    speed: 2000, // 이동 속도를 설정
+                    pause: 4000, // 슬라이드가 보여지는 시간
+                    pager: false, // 현재 위치 페이징 표시 여부 설정
+                    moveSlides: 1, // 슬라이드 이동시 개수
                     infiniteLoop: true, //true | (false, true) | true면 마지막에서 첫번째로 전환 그 반대도 동일, 무한루프
                     //slideWidth: 100,   // 슬라이드 너비
-                    minSlides: 4,      // 최소 노출 개수
-                    maxSlides: 4,      // 최대 노출 개수
+                    minSlides: 4, // 최소 노출 개수
+                    maxSlides: 4, // 최대 노출 개수
                     //slideMargin: 5,    // 슬라이드간의 간격
-                    auto: false,        // 자동 실행 여부
-                    autoHover: false,   // 마우스 호버시 정지 여부
-                    controls: true,   // 이전 다음 버튼 노출 여부
+                    auto: false, // 자동 실행 여부
+                    autoHover: false, // 마우스 호버시 정지 여부
+                    controls: true, // 이전 다음 버튼 노출 여부
                     //pagerCustom: ".bx_pager" // 페이저
                 });
             }
             /* ctg_view cont slide btn hover change img */
             /* next btn */
-            $(".bx-next").hover(function () {
-                $(this).css({ background: "url(images/main/right_icon_over_32x48.jpg) center no-repeat" })
-            }, function () {
-                $(this).css({ background: "url(images/main/right_icon_32x48.jpg) center no-repeat" });
+            $(".bx-next").hover(function() {
+                $(this).css({
+                    background: "url(images/main/right_icon_over_32x48.jpg) center no-repeat"
+                })
+            }, function() {
+                $(this).css({
+                    background: "url(images/main/right_icon_32x48.jpg) center no-repeat"
+                });
             });
 
             /* prev btn */
-            $(".bx-prev").hover(function () {
-                $(this).css({ background: "url(images/main/left_icon_over_32x48.jpg) center no-repeat" })
-            }, function () {
-                $(this).css({ background: "url(images/main/left_icon_32x48.jpg) center no-repeat" });
+            $(".bx-prev").hover(function() {
+                $(this).css({
+                    background: "url(images/main/left_icon_over_32x48.jpg) center no-repeat"
+                })
+            }, function() {
+                $(this).css({
+                    background: "url(images/main/left_icon_32x48.jpg) center no-repeat"
+                });
             });
 
             /* banner slider */
             var bannerBxSlider = $(".banner_bx_slider").bxSlider({
-                mode: "fade",// 가로 방향 수평 슬라이드
-                speed: 1000,        // 이동 속도를 설정
-                pause: 5000,         // 슬라이드가 보여지는 시간
-                pager: true,      // 현재 위치 페이징 표시 여부 설정
-                moveSlides: 1,     // 슬라이드 이동시 개수
+                mode: "fade", // 가로 방향 수평 슬라이드
+                speed: 1000, // 이동 속도를 설정
+                pause: 5000, // 슬라이드가 보여지는 시간
+                pager: true, // 현재 위치 페이징 표시 여부 설정
+                moveSlides: 1, // 슬라이드 이동시 개수
                 infiniteLoop: true, //true | (false, true) | true면 마지막에서 첫번째로 전환 그 반대도 동일, 무한루프
                 //slideWidth: 100,   // 슬라이드 너비
                 //minSlides: 4,      // 최소 노출 개수
                 //maxSlides: 4,      // 최대 노출 개수
                 //slideMargin: 5,    // 슬라이드간의 간격
-                auto: true,        // 자동 실행 여부
-                autoHover: false,   // 마우스 호버시 정지 여부
-                controls: false,   // 이전 다음 버튼 노출 여부
+                auto: true, // 자동 실행 여부
+                autoHover: false, // 마우스 호버시 정지 여부
+                controls: false, // 이전 다음 버튼 노출 여부
                 //pagerCustom: "", // 페이저
 
-                onSlideBefore: function () { // 슬라이드 전환 전 마다 콜백
+                onSlideBefore: function() { // 슬라이드 전환 전 마다 콜백
 
                     // 백그라운드 색상 변경 함수
                     function changeBgColor(color) {
                         var color = $(".main_banner_bg").css({
-                            transition: "1s", backgroundColor: color
+                            transition: "1s",
+                            backgroundColor: color
                         });
                     }
 
                     switch (bannerBxSlider.getCurrentSlide()) {
-                        case 0: changeBgColor("#a9ff68");
+                        case 0:
+                            changeBgColor("#a9ff68");
                             break;
-                        case 1: changeBgColor("#fff7b2");
+                        case 1:
+                            changeBgColor("#fff7b2");
                             break;
-                        case 2: changeBgColor("#a8d8fe");
+                        case 2:
+                            changeBgColor("#a8d8fe");
                             break;
-                        case 3: changeBgColor("#fff7b2");
+                        case 3:
+                            changeBgColor("#fff7b2");
                             break;
                     }
                 }
             });
 
             /* 검색어 저장 */
-            $(".search_txt").keyup(function () {
+            $(".search_txt").keyup(function() {
                 var searchTxt = $(".search_txt").val();
                 console.log("검색창 검색어 : " + searchTxt);
             });
 
             //pager hover
-            $(".selectBox1").hover(function () {
+            $(".selectBox1").hover(function() {
                 $(this).children("span").show();
-            }, function () {
+            }, function() {
                 $(this).children("span").hide();
             });
 
-            $(".selectBox2").hover(function () {
+            $(".selectBox2").hover(function() {
                 $(this).parent().prev().find("span").show();
                 $(this).children("span").show();
-            }, function () {
+            }, function() {
                 $(this).parent().prev().find("span").hide();
                 $(this).children("span").hide();
             });
 
-            $(".selectBox3").hover(function () {
+            $(".selectBox3").hover(function() {
                 $(this).parent().prev().prev().find("span").show();
                 $(this).parent().prev().find("span").show();
                 $(this).children("span").show();
-            }, function () {
+            }, function() {
                 $(this).parent().prev().prev().find("span").hide();
                 $(this).parent().prev().find("span").hide();
                 $(this).children("span").hide();
@@ -431,57 +538,98 @@ include "inc/session.php"
 
 
             //오늘의 발견 hover border
-            $(".today_big_contbox").find("img").hover(function () {
-                $(this).css({ border: "1px solid #50a3d9" });
-            }, function () {
-                $(this).css({ border: "none" });
+            $(".today_big_contbox").find("img").hover(function() {
+                $(this).css({
+                    border: "1px solid #50a3d9"
+                });
+            }, function() {
+                $(this).css({
+                    border: "none"
+                });
             });
 
-            $(".today_samll_contbox").find("a").hover(function () {
-                $(this).css({ border: "2px solid #50a3d9" });
-            }, function () {
-                $(this).css({ border: "none" });
+            $(".today_samll_contbox").find("a").hover(function() {
+                $(this).css({
+                    border: "2px solid #50a3d9"
+                });
+            }, function() {
+                $(this).css({
+                    border: "none"
+                });
             });
 
             //상품 페이지 
             //여성패션 핫키워드 hover
-            $(".ctg_view_womans_keywordbox li").hover(function () {
-                $(this).css({ backgroundColor: "#e170a4" });
-                $(this).children("a").css({ color: "#ffffff" });
-            }, function () {
-                $(this).css({ backgroundColor: "#ffffff" });
-                $(this).children("a").css({ color: "#e170a4" });
+            $(".ctg_view_womans_keywordbox li").hover(function() {
+                $(this).css({
+                    backgroundColor: "#e170a4"
+                });
+                $(this).children("a").css({
+                    color: "#ffffff"
+                });
+            }, function() {
+                $(this).css({
+                    backgroundColor: "#ffffff"
+                });
+                $(this).children("a").css({
+                    color: "#e170a4"
+                });
             });
 
             //여행 핫키워드 hover
-            $(".ctg_view_travel_keywordbox li").hover(function () {
-                $(this).css({ backgroundColor: "#00b599" });
-                $(this).children("a").css({ color: "#ffffff" });
-            }, function () {
-                $(this).css({ backgroundColor: "#ffffff" });
-                $(this).children("a").css({ color: "#00b599" });
+            $(".ctg_view_travel_keywordbox li").hover(function() {
+                $(this).css({
+                    backgroundColor: "#00b599"
+                });
+                $(this).children("a").css({
+                    color: "#ffffff"
+                });
+            }, function() {
+                $(this).css({
+                    backgroundColor: "#ffffff"
+                });
+                $(this).children("a").css({
+                    color: "#00b599"
+                });
             });
 
             //남성패션 핫키워드 hover
-            $(".ctg_view_mans_keywordbox li").hover(function () {
-                $(this).css({ backgroundColor: "#1992df" });
-                $(this).children("a").css({ color: "#ffffff" });
-            }, function () {
-                $(this).css({ backgroundColor: "#ffffff" });
-                $(this).children("a").css({ color: "#1992df" });
+            $(".ctg_view_mans_keywordbox li").hover(function() {
+                $(this).css({
+                    backgroundColor: "#1992df"
+                });
+                $(this).children("a").css({
+                    color: "#ffffff"
+                });
+            }, function() {
+                $(this).css({
+                    backgroundColor: "#ffffff"
+                });
+                $(this).children("a").css({
+                    color: "#1992df"
+                });
             });
 
             //식품 핫키워드 hover
-            $(".ctg_view_foods_keywordbox li").hover(function () {
-                $(this).css({ backgroundColor: "#e68d1d" });
-                $(this).children("a").css({ color: "#ffffff" });
-            }, function () {
-                $(this).css({ backgroundColor: "#ffffff" });
-                $(this).children("a").css({ color: "#e68d1d" });
+            $(".ctg_view_foods_keywordbox li").hover(function() {
+                $(this).css({
+                    backgroundColor: "#e68d1d"
+                });
+                $(this).children("a").css({
+                    color: "#ffffff"
+                });
+            }, function() {
+                $(this).css({
+                    backgroundColor: "#ffffff"
+                });
+                $(this).children("a").css({
+                    color: "#e68d1d"
+                });
             });
 
 
-        });</script>
+        });
+    </script>
 </head>
 
 <body>
@@ -529,52 +677,34 @@ include "inc/session.php"
                     <h2 class="hidden">중요/기획/이벤트 정보</h2>
                     <ul class="bx_pager">
                         <li class="main_images_cont1"><a href="#">역대급 이벤트</a>
-                            <div><a data-slide-index="0" href="#" class="selectBox1"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="1" href="#" class="selectBox2"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="2" href="#" class="selectBox3"><span
-                                        class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="0" href="#" class="selectBox1"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="1" href="#" class="selectBox2"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="2" href="#" class="selectBox3"><span class="bottom_border"></span></a></div>
                         </li>
                         <li class="main_images_cont2"><a href="#">놓치면 아쉬운 소식</a>
-                            <div><a data-slide-index="3" href="#" class="selectBox1"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="4" href="#" class="selectBox2"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="5" href="#" class="selectBox3"><span
-                                        class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="3" href="#" class="selectBox1"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="4" href="#" class="selectBox2"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="5" href="#" class="selectBox3"><span class="bottom_border"></span></a></div>
                         </li>
                         <li class="main_images_cont3"><a href="#">쿠팡 신선 코너</a>
-                            <div><a data-slide-index="6" href="#" class="selectBox1"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="7" href="#" class="selectBox2"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="8" href="#" class="selectBox3"><span
-                                        class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="6" href="#" class="selectBox1"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="7" href="#" class="selectBox2"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="8" href="#" class="selectBox3"><span class="bottom_border"></span></a></div>
                         </li>
                         <li class="main_images_cont4"><a href="#">딱 일주일 기획전</a>
-                            <div><a data-slide-index="9" href="#" class="selectBox1"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="10" href="#" class="selectBox2"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="11" href="#" class="selectBox3"><span
-                                        class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="9" href="#" class="selectBox1"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="10" href="#" class="selectBox2"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="11" href="#" class="selectBox3"><span class="bottom_border"></span></a></div>
                         </li>
                         <li class="main_images_cont5"><a href="#">이번 주 HOT 이벤트</a>
-                            <div><a data-slide-index="12" href="#" class="selectBox1"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="13" href="#" class="selectBox2"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="14" href="#" class="selectBox3"><span
-                                        class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="12" href="#" class="selectBox1"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="13" href="#" class="selectBox2"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="14" href="#" class="selectBox3"><span class="bottom_border"></span></a></div>
                         </li>
                         <li class="main_images_cont6"><a href="#">MD신상품</a>
-                            <div><a data-slide-index="15" href="#" class="selectBox1"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="16" href="#" class="selectBox2"><span
-                                        class="bottom_border"></span></a></div>
-                            <div><a data-slide-index="17" href="#" class="selectBox3"><span
-                                        class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="15" href="#" class="selectBox1"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="16" href="#" class="selectBox2"><span class="bottom_border"></span></a></div>
+                            <div><a data-slide-index="17" href="#" class="selectBox3"><span class="bottom_border"></span></a></div>
                         </li>
                     </ul>
                 </div>
@@ -644,8 +774,8 @@ include "inc/session.php"
                         <!-- slide 1st page -->
                         <ul>
                             <li class="ctg_view_woman_cont1">
-                                <a href=""><img src="images/main/S1.jpg" alt=""></a>
-                                <p class="cont_title"><a href="#">77우먼스 여성 하이클래스 셔츠 쉬폰혼방 롱셔츠 상의</a></p>
+                                <a href="products/detail_product.php"><img src="images/main/S1.jpg" alt=""></a>
+                                <p class="cont_title"><a href="products/detail_product.php">77우먼스 여성 하이클래스 셔츠 쉬폰혼방 롱셔츠 상의</a></p>
                                 <p class="cont_price">25,900원</p>
                                 <p class="cont_rck_icn">로켓배송&nbsp;</p>
                                 <p class="cont_grade3">별점3</p>

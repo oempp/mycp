@@ -96,16 +96,73 @@
 
 .produnct_sale {
     width: 1240px;
-    height: 400px;
+    height: auto;
     background-color: cornflowerblue;
     margin: 10px auto;
 }
 
-.produnct_review {
+.produnct_required_info {
     width: 1240px;
-    height: 400px;
+    height: auto;
     background-color: cornflowerblue;
     margin: 10px auto;
+}
+
+.produnct_shp_info {
+    width: 1240px;
+    height: auto;
+    background-color: cornflowerblue;
+    margin: 10px auto;
+}
+
+.produnct_shp_info > p{
+    padding: 10px 20px;
+}
+
+div h3 {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.produnct_review {
+    width: 1240px;
+    height: auto;
+    background-color: cornflowerblue;
+    margin: 10px auto;
+}
+
+.width_cmt_title {
+    width: auto;
+    font-weight: bold;
+    border-right: 1px solid grey;
+    padding: 0 10px;
+
+}
+
+.width_130 {
+    border-right: 1px solid grey;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    padding-right: 15px;
+
+}
+
+.width_50 {
+    border-right: 1px solid grey;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.width_600 {
+    width: 600px;
+}
+
+.cmt_cont {
+    padding: 10px 30px;
+    margin: 10px 20px;
 }
 
 .other_produnct_info_bg {
@@ -114,6 +171,13 @@
     height: 500px;
     margin: auto;
     background-color: cornflowerblue;
+}
+
+.cmt_cont_box {
+    height: auto;
+    border-top: 1px solid gray;
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
 }
 
 .product_name {
@@ -236,5 +300,119 @@ input:focus {
     background-color: #ffffff;
     border: 1px solid #346AFF;
     text-align: center;
+}
 
+table,
+td {
+    border-collapse: collapse
+}
+
+.Required_info td {
+    width: 1040px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.Required_info th {
+    width: 300px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.shp_info td {
+    width: 1040px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.shp_info th {
+    width: 200px;
+    text-align: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.exchange_returns td {
+    width: 1040px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.exchange_returns th {
+    width: 200px;
+    text-align: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.exchange_returns p {
+    margin: 10px 0;
+
+}
+
+.board_list_set th,
+.board_list_set td,
+.pager {
+    padding: 10px;
+    text-align: center
+}
+
+.board_list_set,
+.pager {
+    margin: auto;
+    width: 1200px;
+}
+
+.board_list_title {
+    border-top: 2px solid #999;
+    border-bottom: 1px solid #999
+}
+
+.board_list_content {
+    border-bottom: 1px solid #999;
+}
+
+.no {
+    width: 60px
+}
+
+.b_title {
+    width: 500px
+}
+
+.b_name {
+    width: 100px
+}
+
+.w_date {
+    width: 120px
+}
+
+.cnt {
+    width: 80px
+}
+
+.board_content_title {
+    text-align: left;
+    padding-left: 10px
+}
+
+a:hover {
+    color: rgb(255, 128, 0)
+}
+
+.write_area {
+    width: 860px;
+    display: flex;
+    justify-content: space-between
+}
+
+.qna_write {
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    text-align: right;
 }
