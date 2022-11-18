@@ -105,5 +105,5 @@ $(document).ready(function () {
     }, function () {
         $(this).children("a").css({ color: "black" });
     });
-    
+
 });

@@ -26,7 +26,7 @@ include "../inc/session.php";
     <!-- login.css -->
     <link rel="stylesheet" type="text/css" href="../css/login.css">
     <!-- user sevice.css -->
-    <link rel="stylesheet" type="text/css" href="../css/user_service.css?3">
+    <link rel="stylesheet" type="text/css" href="../css/user_service.css?1211">
     <!-- mypage.css -->
     <link rel="stylesheet" type="text/css" href="../css/mypage.css">
 
@@ -412,7 +412,6 @@ include "../inc/session.php";
                 </tr>
             </table>
         </section>
-
         <section class="main3rd_bgBox">
 
             <div>
@@ -425,6 +424,7 @@ include "../inc/session.php";
                     <li>쿠팡캐시</li>
                     <li>회원서비스</li>
                     <li>여행티켓</li>
+
                 </ul>
             </div>
 

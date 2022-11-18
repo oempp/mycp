@@ -66,9 +66,10 @@ include "../inc/session.php";
             width: 430px;
             margin: auto;
         }
+
         .star {
             font-size: 16px;
-            color:#FAB502;
+            color: #FAB502;
             line-height: 30px;
         }
     </style>
@@ -116,7 +117,7 @@ include "../inc/session.php";
         </div>
 
         <div class="qna_notice_box">
-            <form name="board_form" action="insert.php" method="post" onsubmit="return board_check()">
+            <form name="board_form" action="insert_cmt.php" method="post" onsubmit="return board_check()">
                 <fieldset>
                     <legend>상품평</legend>
                     <p>
@@ -131,11 +132,11 @@ include "../inc/session.php";
 
                     <p>
                         <label for="cate">평점</label>
-                        <span class="star">★★★★★ </span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="5">
-                        <span class="star">★★★★ </span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="4">
-                        <span class="star">★★★ </span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="3">
-                        <span class="star">★★ </span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="2">
-                        <span class="star">★ </span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="1">
+                        <span class="star"> ★★★★★</span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="5">
+                        <span class="star"> ★★★★</span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="4">
+                        <span class="star"> ★★★</span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="3">
+                        <span class="star"> ★★</span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="2">
+                        <span class="star"> ★</span><input type="radio" class="cmt_score" id="cmt_score" name="cmt_score" value="1">
                     </p>
 
                     <p>
@@ -150,7 +151,10 @@ include "../inc/session.php";
 
                     <div class="margin_auto">
                         <button type="submit" class="ok_btn">확인</button>
-                        <button type="button" class="no_btn" onclick="history.back()">취소</button>
+                        <button type="button" class="no_btn" onclick="close()">취소</button>
+
+
+
                     </div>
                 </fieldset>
             </form>

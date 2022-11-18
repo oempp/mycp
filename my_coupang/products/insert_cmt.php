@@ -10,6 +10,7 @@ $table_name = "product_cmt";
 // 이전 페이지에서 값 가져오기
 $cmt_name = $_POST["cmt_name"];
 $cmt_pwd = $_POST["cmt_pwd"];
+$cmt_score = isset($_POST["cmt_score"]) ? $_POST["cmt_score"] : 1;
 
 //$p_code = $_POST["p_code"];
 /* 상품코드 꼭 전송 받을것 */
@@ -26,24 +27,24 @@ $cmt_content = $_POST["cmt_content"];
 $cmt_date = date("Y-m-d");
 
 // 값 확인
-/* 
-echo "<p> 이름 : ".$b_name."</p>";
-echo "<p> 비밀번호 : ".$b_pwd."</p>";
-echo "<p> 비밀번호 : ".$cate."</p>";
-echo "<p> 제목 : ".$b_title."</p>";
-echo "<p> 내용 : ".$b_content."</p>";
-echo "<p> 가입일 : ".$w_date."</p>";
-exit; 
-*/
+
+echo "<p> 이름 : ".$cmt_name."</p>";
+echo "<p> 비밀번호 : ".$cmt_pwd."</p>";
+echo "<p> 제목 : ".$cmt_title."</p>";
+echo "<p> 내용 : ".$cmt_content."</p>";
+echo "<p> 평점 : ".$cmt_score."</p>";
+echo "<p> 가입일 : ".$cmt_date."</p>";
+
+
 
 // DB 연결
 include "../inc/dbcon.php";
 
 // 쿼리 작성
 $sql = "insert into $table_name(";
-$sql .= "p_code, cmt_name, cmt_pwd, cmt_title, cmt_content, cmt_date";
+$sql .= "p_code, cmt_name, cmt_pwd, cmt_title, cmt_content, cmt_date, cmt_score";
 $sql .= ") values(";
-$sql .= "'$p_code', '$cmt_name', '$cmt_pwd',  '$cmt_title', '$cmt_content', '$cmt_date'";
+$sql .= "'$p_code', '$cmt_name', '$cmt_pwd',  '$cmt_title', '$cmt_content', '$cmt_date', '$cmt_score'";
 $sql .= ");";
 echo $sql;
 exit;

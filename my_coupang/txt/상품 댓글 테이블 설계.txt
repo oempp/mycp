@@ -29,7 +29,7 @@ create table product_cmt(
 ** 문의 **
 
 * 테이블 생성 : product_qna
-create table product_cmt(
+create table product_qna(
     idx int auto_increment primary key,
     p_code varchar(20) not null,    
     qna_name varchar(20) not null,
@@ -41,3 +41,5 @@ create table product_cmt(
     qna_date date not null,
     qna_cnt int default 0
 );
+
+insert into product_qna(p_code, qna_name, qna_pwd, qna_cate, qna_title, qna_content, qna_date) values('p.00000002', '상품2번', '123123', 'q_shpping', '2번문의임', '2번비버버번', '2022-11-17');

@@ -1,5 +1,7 @@
 <?php
-include "inc/session.php"
+include "inc/session.php";
+include "inc/product_code.php"; // $product[NN]
+// <?php eho $product[];
 ?>
 
 <!DOCTYPE html>
@@ -436,6 +438,9 @@ include "inc/session.php"
                     autoHover: false, // 마우스 호버시 정지 여부
                     controls: true, // 이전 다음 버튼 노출 여부
                     //pagerCustom: ".bx_pager" // 페이저
+
+                    //a링크 사용가능하게
+                    touchEnabled : (navigator.maxTouchPoints > 0)
                 });
             }
             /* ctg_view cont slide btn hover change img */
@@ -760,7 +765,7 @@ include "inc/session.php"
                 <div class="ctg_view_womans_keywordbox">
                     <p class="hotkeyword">HOT 키워드</p>
                     <ul>
-                        <li class="keywordbox_5word"><a href="#">#반팔티셔츠</li>
+                        <li class="keywordbox_5word"><a href="/my_coupang/products/detail_product.php">#반팔티셔츠</li>
                         <li class="keywordbox_3word"><a href="#">#원피스</a></li>
                         <li class="keywordbox_3word"><a href="#">#청바지</a></li>
                         <li class="keywordbox_2word"><a href="#">#샌들</a></li>
@@ -774,8 +779,8 @@ include "inc/session.php"
                         <!-- slide 1st page -->
                         <ul>
                             <li class="ctg_view_woman_cont1">
-                                <a href="products/detail_product.php"><img src="images/main/S1.jpg" alt=""></a>
-                                <p class="cont_title"><a href="products/detail_product.php">77우먼스 여성 하이클래스 셔츠 쉬폰혼방 롱셔츠 상의</a></p>
+                                <a href="/my_coupang/products/detail_<?php echo $product[1];?>.php?p_code=<?php echo $product[1];?>return false()"><img src="images/main/S1.jpg" alt=""></a>
+                                <p class="cont_title"><a href="/my_coupang/products/detail_<?php echo $product[1];?>.php?p_code=<?php echo $product[1];?>">77우먼스 여성 하이클래스 셔츠 쉬폰혼방 롱셔츠 상의</a></p>
                                 <p class="cont_price">25,900원</p>
                                 <p class="cont_rck_icn">로켓배송&nbsp;</p>
                                 <p class="cont_grade3">별점3</p>

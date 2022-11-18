@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     width: 1200px;
-    height: 900px;
-    background: darkgreen;
+    height: 900px;    
     margin: auto;
 }
 
@@ -51,8 +50,8 @@
 .proruct_txt {
     margin: 10px;
     width: 850px;
-    height: 750px;
-    background-color: rgb(0, 222, 222);
+    height: 850px;
+    border: 1px solid grey;
 }
 
 
@@ -69,15 +68,22 @@
     width: 1280px;
     height: auto;
     margin: auto;
-    background-color: cornsilk;
+    
 }
 
 .side_opt {
     position: relative;
     width: 300px;
     height: 800px;
-    background-color: aqua;
+    background-color: rgb(240,240,240);
     float: right;
+}
+
+.box {
+    margin: 20px auto;
+    background-color: #ffffff;
+    width: 270px;
+    height: 300px;
 }
 
 .produnct_info {
@@ -86,7 +92,6 @@
     flex-direction: column;
     width: 960px;
     height: auto;
-    background-color: cornflowerblue;
     margin: 10px;
 }
 
@@ -94,24 +99,34 @@
     margin: 10px auto;
 }
 
+.produnct_more_img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 960px;
+    height: auto;
+    margin: 10px;
+}
+
+.produnct_more_img img {
+    margin: 10px auto;
+}
+
 .produnct_sale {
     width: 1240px;
-    height: auto;
-    background-color: cornflowerblue;
+    height: auto;    
     margin: 10px auto;
 }
 
 .produnct_required_info {
     width: 1240px;
-    height: auto;
-    background-color: cornflowerblue;
+    height: auto;    
     margin: 10px auto;
 }
 
 .produnct_shp_info {
     width: 1240px;
     height: auto;
-    background-color: cornflowerblue;
     margin: 10px auto;
 }
 
@@ -121,8 +136,7 @@
 
 div h3 {
     font-size: 30px;
-
-    margin: 30px 0;
+    margin: 120px 0 50px 0;
     border-top: 5px solid black;
     padding: 20px 0;
 }
@@ -130,7 +144,6 @@ div h3 {
 .produnct_review_bg {
     width: 1240px;
     height: auto;
-    background-color: cornflowerblue;
     margin: 10px auto;
 }
 
@@ -138,11 +151,13 @@ div h3 {
     width: auto;
     font-weight: bold;
     border-right: 1px solid grey;
-    padding: 0 10px;
+    padding-left: 30px;
+    padding-right: 10px;
 
 }
 
 .width_130 {
+  
     border-right: 1px solid grey;
     display: inline-block;
     width: 130px;
@@ -151,8 +166,14 @@ div h3 {
 
 }
 
-.width_50 {
+.width_auto {
+    width: auto;
     border-right: 1px solid grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.width_50 {    
     display: inline-block;
     width: 50px;
     text-align: center;
@@ -169,11 +190,9 @@ div h3 {
 }
 
 .other_produnct_info_bg {
-
     width: 1240px;
     height: auto;
-    margin: auto;
-    background-color: cornflowerblue;
+    margin: 10 auto 100px;
 }
 
 .cmt_cont_box {
@@ -212,13 +231,19 @@ div h3 {
 
 .product_btn_styBox {
     height: 60px;
-    margin: 20px;
+    margin: 15px;
 }
 
 .proruct_txt select {
     width: 280px;
     height: 30px;
 }
+
+.side_opt select {
+    width: 250px;
+    height: 30px;
+}
+
 
 .select_txt {
     margin: 10px 20px;
@@ -227,9 +252,11 @@ div h3 {
 }
 
 .select_complete {
+    display: flex;
+    align-items: center;
     margin: 40px 20px;
     height: 80px;
-    background-color: cadetblue;
+    background-color: rgb(230,230,230);
 }
 
 .product_sum_price {
@@ -267,6 +294,7 @@ input:focus {
     font-size: 20px;
     text-align: center;
     border: 1px solid grey;
+    background-color: white;
 }
 
 .btn_sty1 {
@@ -304,6 +332,52 @@ input:focus {
     border: 1px solid #346AFF;
     text-align: center;
 }
+.btn_sty4 {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 270px;
+    height: 60px;
+    background-color: #346AFF;
+    color: white !important;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.btn_sty5 {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    background-color: black;
+    color: white !important;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.btn_sty6 {
+    float: right;
+    display: inline-block;
+    width: 55px;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #346AFF;
+    text-align: center;
+}
+
+.viewmore {
+    font-size: 15px;
+    width: 360px;
+    height: 50px;
+    line-height: 50px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-align: center;
+}
 
 table,
 td {
@@ -316,7 +390,8 @@ td {
     background-color: #ededed;
 }
 
-.produnct_shp_info > p {
+.produnct_shp_info>p {
+    padding-left: 120px;
     background-color: #ededed;
 }
 
@@ -374,6 +449,15 @@ td {
     text-align: center
 }
 
+.pager a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
 
 .board_list_set,
 .pager {
@@ -424,14 +508,17 @@ a:hover {
 }
 
 .write_area {
-    font-size: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 20px;    
     width: auto;
     margin: 20px auto;
     padding: 0 20px;
-    display: flex;
-    justify-content: right;
 }
-
+.write_area span {
+    margin: 0 5px;
+}
 .qna_write {
     width: 1000px;
     padding: 20px;

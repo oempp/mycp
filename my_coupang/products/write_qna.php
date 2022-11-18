@@ -98,6 +98,11 @@ include "../inc/session.php";
                 return false;
             };
         };
+
+        function close () {
+            opener.open('about:blank','_self').close();
+        }
+
     </script>
 </head>
 
@@ -149,7 +154,7 @@ include "../inc/session.php";
 
                     <div class="margin_auto">
                         <button type="submit" class="ok_btn">확인</button>
-                        <button type="button" class="no_btn" onclick="history.back()">취소</button>
+                        <button type="button" class="no_btn" onclick="close()">취소</button>
                     </div>
                 </fieldset>
             </form>

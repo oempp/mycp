@@ -36,13 +36,13 @@ exit;
 include "../inc/dbcon.php";
 //쿼리
 $sql = "insert into product(p_code, p_ct_code, p_name, p_price, p_extra_price, p_show, p_on_sale, p_for_sale, p_stock, p_shp_info, p_img_info) values('$p_code', '$p_ct_code', '$p_name', '$p_price', '$p_extra_price', '$p_show', '$p_on_sale', '$p_for_sale', '$p_stock', '$p_shp_info', '$p_img_info');";
-//$result = mysqli_query($dbcon, sql);
+//$result = mysqli_query($dbcon, $sql);
 
 echo $sql;
 
 //페이지 이동
-echo "    
+/* echo "    
 <script type=\"text/javascript\">
 alert(\"상품 정보 등록 완료.\");
 location.href=\"input_product.php\";
-</script>";
+</script>"; */
