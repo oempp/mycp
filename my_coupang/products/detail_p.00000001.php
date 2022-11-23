@@ -4,7 +4,8 @@ include "../inc/session.php";
 //상품코드 
 include "../inc/product_code.php";
 
-
+//페이저 클릭시 y스크롤 값 받아오기
+$movePos = isset($_GET['movePos']) ? $_GET['movePos'] : "0";
 
 // DB 연결
 include "../inc/dbcon.php";
@@ -146,7 +147,7 @@ if ($qna_e_pageNum > $qna_total_page) {
     <!-- mainp_codegory.css -->
     <link rel="stylesheet" type="text/css" href="../css/main_p_codegory_list.css">
     <!-- detail_product -->
-    <link rel="stylesheet" type="text/css" href="../css/detail_product.css?aass">
+    <link rel="stylesheet" type="text/css" href="../css/detail_product.css?az">
 
     <style type="text/css">
 
@@ -182,6 +183,7 @@ if ($qna_e_pageNum > $qna_total_page) {
                 val += 1;
                 $("#product_amount").val(val);
                 $("#product_amount2").val(val);
+                $(".sum_price").val($("#product_amount").val() * parseInt(<?php echo $p_array['p_price'] ?>));
                 //console.log("클릭 : " + val);
                 //console.log("밸 : " + $("#product_amount").val());
             });
@@ -193,6 +195,7 @@ if ($qna_e_pageNum > $qna_total_page) {
                     val -= 1;
                     $("#product_amount").val(val);
                     $("#product_amount2").val(val);
+                    $(".sum_price").val($("#product_amount").val() * parseInt(<?php echo $p_array['p_price'] ?>));
                 } else return false;
             });
 
@@ -214,6 +217,7 @@ if ($qna_e_pageNum > $qna_total_page) {
                 val += 1;
                 $("#product_amount").val(val);
                 $("#product_amount2").val(val);
+                $(".sum_price").val($("#product_amount").val() * parseInt(<?php echo $p_array['p_price'] ?>));
                 //console.log("클릭 : " + val);
                 //console.log("밸 : " + $("#product_amount").val());
             });
@@ -225,6 +229,7 @@ if ($qna_e_pageNum > $qna_total_page) {
                     val -= 1;
                     $("#product_amount").val(val);
                     $("#product_amount2").val(val);
+                    $(".sum_price").val($("#product_amount").val() * parseInt(<?php echo $p_array['p_price'] ?>));
                 } else return false;
             });
 
@@ -284,22 +289,55 @@ if ($qna_e_pageNum > $qna_total_page) {
 
                 }
             });
+
+            /*             $(".no_scroll").click(function(e) {
+                            //Cancel the link behavior
+                            var topPosition = $(window).scrollTop();
+                            console.log("topPosition : " + topPosition);
+                            window.scrollTo(0, topPosition);
+                            //e.preventDefault();
+                        }); */
+
+            //qna 보기
+            $(".show_qna").click(function() {
+                //alert("클릭")
+                $(this).parent().parent().next(".hide_qna").toggle();
+                $(this).parent().parent().next().next(".hide_qna").toggle();
+            })
+
         });
+
+        window.onload = function() {
+            //(alert(<?php echo $movePos ?>));
+            window.scrollTo(0, <?php echo $movePos ?>);
+        };
     </script>
 
     <script type="text/javascript">
+        var topPosition = window.scrollTop();
+        console.log("topPosition : " + topPosition);
+        window.scrollTop(0, topPosition + <?php echo $movePos ?>);
+        console.log(window.scrollTop(0, topPosition + <?php echo $movePos ?>));
+        alert(window.scrollTop(0, topPosition + <?php echo $movePos ?>));
+        alert(window.scrollTop(0, topPosition + <?php echo $movePos ?>));
+
+
+        var SUM_PRICE = 0;
         //수량 수정 조정
         function chg_amount(txt) {
             var toNum = parseInt(txt);
             if (isNaN(toNum)) {
                 $("#product_amount").val(0);
                 $("#product_amount2").val(0);
+                $(".sum_price").val($("#product_amount").val() * parseInt(<?php echo $p_array['p_price'] ?>));
             } else {
                 $("#product_amount").val(toNum);
                 $("#product_amount2").val(toNum);
+                $(".sum_price").val($("#product_amount").val() * parseInt(<?php echo $p_array['p_price'] ?>));
             }
             //console.log(toInt);
         }
+
 
         //리뷰 팝업
         function cmt_popup() {
@@ -309,6 +347,13 @@ if ($qna_e_pageNum > $qna_total_page) {
         //문의 팝업
         function qna_popup() {
             window.open('write_qna.php', '문의남기기', 'width=500px, height=800px');
+        }
+
+        //페이저 클릭 스크롤 위치 저장
+        function scrollPos() {
+            window.scrollTop();
+            console.log(window.scrollTop());
+            return false;
         }
     </script>
 </head>
@@ -353,8 +398,8 @@ if ($qna_e_pageNum > $qna_total_page) {
                     <script type="text/javascript">
                         var price = <?php echo $p_array['p_price'] ?>;
                         /* 가격 1000의자리 쉼표 찍기 */
-                        var rpl_ptice = price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-                        document.writeln(rpl_ptice);
+                        var rpl_price = price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+                        document.writeln(rpl_price);
                     </script>
                     원
                 </p>
@@ -385,7 +430,9 @@ if ($qna_e_pageNum > $qna_total_page) {
                     옵션 선택후 갯수 선택
                 </p>
 
-                <p class="product_sum_price">합계 <span class="product_sum_price_num">120,000</span> 원</p>
+                <p class="product_sum_price">합계 <span class="product_sum_price_num">
+                        <input class="sum_price" type="text" value="<?php echo $p_array['p_price'] ?>" readonly>
+                    </span> 원</p>
                 <p class="product_btn_styBox">
                     <a href="#return false()" class="btn_sty1">장바구니</a>
                     <a href="#return false()" class="btn_sty2">바로구매</a>
@@ -421,7 +468,9 @@ if ($qna_e_pageNum > $qna_total_page) {
                     옵션 선택후 갯수 선택
                 </p>
                 <div class="box">aa</div>
-                <p class="product_sum_price">합계 <span class="product_sum_price_num">120,000</span> 원</p>
+                <p class="product_sum_price">합계 <span class="product_sum_price_num">
+                        <input class="sum_price" type="text" value="<?php echo $p_array['p_price'] ?>" readonly>
+                    </span> 원</p>
                 <p class="product_btn_styBox">
                     <a href="" class="btn_sty4">바로구매</a>
                     <a href="" class="btn_sty5">장바구니</a>
@@ -600,7 +649,7 @@ if ($qna_e_pageNum > $qna_total_page) {
 
         <section>
             <div class="produnct_review_bg">
-                <h3>상품 리뷰</h3>
+                <h3 id="h3">상품 리뷰</h3>
                 <?php
                 // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
                 $start = ($page - 1) * $list_num;
@@ -623,7 +672,7 @@ if ($qna_e_pageNum > $qna_total_page) {
                 $i = $total - (($page - 1) * $list_num);
                 ?>
                 <p class="write_area">
-                    <span><a href="#" onclick="cmt_popup()"><span class="write_btn">리뷰작성</span></a></span>
+                    <span><a href="#none" onclick="cmt_popup()"><span class="write_btn">리뷰작성</span></a></span>
                 </p>
 
                 <?php while ($array = mysqli_fetch_array($result)) {
@@ -663,25 +712,25 @@ if ($qna_e_pageNum > $qna_total_page) {
                     // pager : 이전 페이지
                     if ($page <= 1) {
                     ?>
-                        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=1"> 〈 </a>
+                        <a href="#" onclick="location.href ='/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=1'" onclick="scrollPos()"> 〈 </a>
                     <?php } else { ?>
-                        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=<?php echo ($page - 1); ?>"> 〈 </a>
+                        <a href="#" onclick="location.href ='/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=<?php echo ($page - 1); ?>'" onclick="scrollPos()"> 〈 </a>
                     <?php }; ?>
 
                     <?php
                     // pager : 페이지 번호 출력
                     for ($print_page = $s_pageNum; $print_page <= $e_pageNum; $print_page++) {
                     ?>
-                        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
+                        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=<?php echo $print_page; ?>" onclick="scrollPos()"><?php echo $print_page; ?></a>
                     <?php }; ?>
 
                     <?php
                     // pager : 다음 페이지
                     if ($page >= $total_page) {
                     ?>
-                        <a href=".php?p_code=<?php echo $p_code; ?>&page=<?php echo $total_page; ?>"> 〉 </a>
+                        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=<?php echo $total_page; ?>" onclick="scrollPos()"> 〉 </a>
                     <?php } else { ?>
-                        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=<?php echo ($page + 1); ?>"> 〉 </a>
+                        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&page=<?php echo ($page + 1); ?>" onclick="scrollPos()"> 〉 </a>
                     <?php }; ?>
                 </p>
             </div>
@@ -693,48 +742,52 @@ if ($qna_e_pageNum > $qna_total_page) {
             <p class="write_area">
                 <span>전체 (<?php echo $qna_total; ?>)</span>
                 <span>답변완료 (<?php echo $qna_total ?>)</span>
-                <span>답변대기 (<?php echo $qna_total; ?>)</span><a href="#" onclick="qna_popup()"><span class="write_btn">문의 남기기</span></a>
+                <span>답변대기 (<?php echo $qna_total; ?>)</span><a href="#none" onclick="qna_popup()"><span class="write_btn">문의 남기기</span></a>
             </p>
             <!-- 테이블 게시판 -->
             <table class="board_list_set">
                 <tr class="board_list_title">
                     <th class="no">번호</th>
                     <th class="ans">답변</th><?php
-            // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
-            $qna_start = ($qna_page - 1) * $qna_list_num;
-            $qna_table_name = 'product_qna';
-            // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
-            // limit 몇번부터, 몇 개 + 카테고리
-            // 쿼리 작성
-            if ($p_code) { //상품 코드로 구분해서 맞는 댓글만 표시
-                $qna_sql = "select * from $qna_table_name where p_code='$p_code' order by idx desc limit $qna_start, $qna_list_num;";
-            } else {
-                $qna_sql = "select * from $qna_table_name order by idx desc limit $qna_start, $qna_list_num;";
-            };
+                                            // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
+                                            $qna_start = ($qna_page - 1) * $qna_list_num;
+                                            $qna_table_name = 'product_qna';
+                                            // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
+                                            // limit 몇번부터, 몇 개 + 카테고리
+                                            // 쿼리 작성
+                                            if ($p_code) { //상품 코드로 구분해서 맞는 댓글만 표시
+                                                $qna_sql = "select * from $qna_table_name where p_code='$p_code' order by idx desc limit $qna_start, $qna_list_num;";
+                                            } else {
+                                                $qna_sql = "select * from $qna_table_name order by idx desc limit $qna_start, $qna_list_num;";
+                                            };
 
-            // DB에 데이터 전송
-            $qna_result = mysqli_query($dbcon, $qna_sql);
+                                            // DB에 데이터 전송
+                                            $qna_result = mysqli_query($dbcon, $qna_sql);
 
-            // DB에서 데이터 가져오기
-            // pager : 글번호(역순)
-            // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
-            $j = $qna_total - (($qna_page - 1) * $qna_list_num);
-            ?>
+                                            // DB에서 데이터 가져오기
+                                            // pager : 글번호(역순)
+                                            // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
+                                            $j = $qna_total - (($qna_page - 1) * $qna_list_num);
+                                            ?>
                     <th class="b_title">제목</th>
                     <th class="b_name">작성자</th>
                     <th class="w_date">날짜</th>
                     <th class="cnt">조회수</th>
                 </tr>
+
                 <?php
                 while ($array = mysqli_fetch_array($qna_result)) {
                 ?>
                     <tr class="board_list_content">
                         <td><?php echo $j; ?></td>
                         <td><?php if (!$array['qna_answer_check']) echo "답변대기중";
-                            else echo "답변완료"; ?></td>
+                            else if ($array['qna_answer_check']) echo "답변완료"; ?></td>
+                        <span></span>
                         <td class="board_content_title" style="text-align : left;">
-                            <a href="view.php?b_idx=<?php echo $array["idx"]; ?>">
+                            <a class="show_qna" href="#">
+
                                 [ <?php
+
                                     if ($array["qna_cate"] == "q_basic") {
                                         echo "일반";
                                     } else if ($array["qna_cate"] == "q_product") {
@@ -748,6 +801,12 @@ if ($qna_e_pageNum > $qna_total_page) {
                                     };
                                     ?> ]
                                 <?php echo $array["qna_title"]; ?>
+                                <!--                                 <script type="text/javascript">
+                                    //문의 팝업
+                                    function view_popup() {
+                                        window.open('view_qna.php?b_idx=<?php echo $array["idx"]; ?>', '답변', 'width=500px, height=800px');
+                                    }
+                                </script> -->
                             </a>
                         </td>
                         <td><?php $rplName = substr_replace($array["qna_name"], "*********", 3);
@@ -755,47 +814,76 @@ if ($qna_e_pageNum > $qna_total_page) {
                         <?php $qna_date = substr($array["qna_date"], 0, 10); ?>
                         <td><?php echo $qna_date; ?></td>
                         <td><?php echo $array["qna_cnt"]; ?></td>
+                    </tr>
+                    <tr class="hide_qna">
+                        <td></td>
+                        <td>내용</td>
+                        <td>
+                            <div class="qna_cont_box">
+                                <p class="qna_cont"><?php echo $array["qna_content"]; ?></p>
+                                <p><a href="answer_qna.php?q_idx=<?php echo $array["idx"]; ?>">답변하기</a></p>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <p></p>
+                        </td>
+                        </td>
+                    </tr>
+                    <?php
+                    if ($array['qna_answer_check']) { ?>
+                        <tr class="hide_qna">
+                            <td class="aaaa11"></td>
+                            <td class="aaaa11">답변</td>
+                            <td class="aaaa11">
+                                <p class="answer_cont"><?php echo $array['qna_answer'] ?></p>
+                            </td>
+                            <td class="aaaa11">관리자</td>
+                            <td class="aaaa11">
+                                <p><?php echo $array['qna_answer_check'] ?></p>
+                            </td>
+                            <td class="aaaa11"></td>
+                        </tr>
+                    <?php } ?>
+                    <!-- 임시 내용 표기 -->
 
-                        <!-- 임시 내용 표기 -->
-                    </tr>
-                    <tr class="board_list_content"><?php echo $array["qna_content"]; ?></td>
-                    </tr>
-                <?php
+    </div>
+<?php
                     $j--;
                 };
-                ?>
-            </table>
-            <p class="pager">
-                <?php
-                // pager : 이전 페이지
-                if ($qna_page <= 1) {
-                ?>
-                    <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=1"> 〈 </a>
-                <?php } else { ?>
-                    <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo ($qna_page - 1); ?>"> 〈 </a>
-                <?php }; ?>
+?>
 
-                <?php
-                // pager : 페이지 번호 출력
-                for ($qna_print_page = $qna_s_pageNum; $qna_print_page <= $qna_e_pageNum; $qna_print_page++) {
-                ?>
-                    <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo $qna_print_page; ?>" onclick="return false()"><?php echo $qna_print_page; ?></a>
-                <?php }; ?>
+</table>
+<p class="pager">
+    <?php
+    // pager : 이전 페이지
+    if ($qna_page <= 1) {
+    ?>
+        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=1&movePos=22000"> 〈 </a>
+    <?php } else { ?>
+        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo ($qna_page - 1); ?>&movePos=22000"> 〈 </a>
+    <?php }; ?>
 
-                <?php
-                // pager : 다음 페이지
-                if ($qna_page >= $qna_total_page) {
-                ?>
-                    <a href=".php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo $qna_total_page; ?>" onclick="return false()"> 〉 </a>
-                <?php } else { ?>
-                    <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo ($qna_page + 1); ?>" onclick="return false()"> 〉 </a>
-                <?php }; ?>
-            </p>
-            <!-- 테이블 게시판 -->
-        </section>
-        <!-- FOOTER -->
-        <?php include "../inc/footer_part.php" ?>
-    </div>
+    <?php
+    // pager : 페이지 번호 출력
+    for ($qna_print_page = $qna_s_pageNum; $qna_print_page <= $qna_e_pageNum; $qna_print_page++) {
+    ?>
+        <a href="/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo $qna_print_page; ?>&movePos=22000"><?php echo $qna_print_page; ?></a>
+    <?php }; ?>
+
+    <?php
+    // pager : 다음 페이지
+    if ($qna_page >= $qna_total_page) {
+    ?>
+        <a href="#" onclick="location.href='/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo $qna_total_page; ?>&movePos=22000'"> 〉 </a>
+    <?php } else { ?>
+        <a href="#" onclick="location.href='/my_coupang/products/detail_<?php echo $p_code; ?>.php?p_code=<?php echo $p_code; ?>&qna_page=<?php echo ($qna_page + 1); ?>&movePos=22000'"> 〉 </a>
+    <?php }; ?>
+</p>
+<!-- 테이블 게시판 -->
+</section>
+<!-- FOOTER -->
+<?php include "../inc/footer_part.php" ?>
+</div>
 </body>
 
 </html>
