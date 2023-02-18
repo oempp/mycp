@@ -24,7 +24,7 @@
     
     ![06_메인 페이지](https://user-images.githubusercontent.com/111415080/219893160-fca84cbf-8a33-44e5-8f15-a1c42a279b93.jpg)
     
-    <pre whiteSpace="pre-wrap">
+    <pre whiteSpace="preWrap">
     쇼핑몰에서 중요하다고 생각 되는 부분이 검색창과 메인이미지라고 생각하기에 처음 보이는 화면에서 비중을 많이 뒀습니다.
     상품 검색을 위한 검색바를 최상단에 배치해 한 눈에 들어오도록 했고 메인이미지로는 이벤트나 기획전 상품할인등 중요소식을 볼 수 있도록 배치했습니다.
     
