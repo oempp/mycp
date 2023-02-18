@@ -4,8 +4,8 @@
 
 ### 웹 퍼블리싱 기획 
     
-  웹프로그래밍 기초학습한 후 실제 이용되는 웹사이트처럼 만들어 보고자 프로젝트를 기획했습니다.<br>
-  사이트를 정한 뒤 사이트를 리뉴얼 하는 방향으로 정했고 여러가지 기능구현을 고려해 쇼핑몰 관련사이트로 정하고 디자인 시안을 만들고 코딩을 통해 디자인을 구현하고 나아가 서버 연동 및 배포까지 염두하고 작업을 진행했습니다.
+웹프로그래밍 기초학습한 후 실제 이용되는 웹사이트처럼 만들어 보고자 프로젝트를 기획했습니다.<br>
+사이트를 정한 뒤 사이트를 리뉴얼 하는 방향으로 정했고 여러가지 기능구현을 고려해 쇼핑몰 관련사이트로 정하고 디자인 시안을 만들고 코딩을 통해 디자인을 구현하고 나아가 서버 연동 및 배포까지 염두하고 작업을 진행했습니다.
     
 ### 웹 퍼블리싱 설계
 
@@ -26,18 +26,54 @@
 
 <p style="color:red">
 쇼핑몰에서 중요하다고 생각 되는 부분이 검색창과 메인이미지라고 생각하기에 처음 보이는 화면에서 비중을 많이 뒀습니다.
-상품 검색을 위한 검색바를 최상단에 배치해 한 눈에 들어오도록 했고 메인이미지로는 이벤트나 기획전 상품할인등 중요소식을 볼 수 있도록 배치했습니다.
+    
+상품 검색을 위한 검색바를 최상단에 배치해 한 눈에 들어오도록 했고 그라데이션 테두리 효과를 적용했니다.
+    
+메인이미지로는 이벤트나 기획전 상품할인등 중요소식을 볼 수 있도록 배치했습니다.
+
+카테고리를 세분화 하여 3개의 상품목록으로 디자인했고 하단부분엔 카테고별 상품들이 노출되도록 설계했습니다.
 </p>
 
 **서브 페이지**
 
- <p>         
-<img src="https://user-images.githubusercontent.com/111415080/219893188-32225894-746d-49a4-ad63-1e1fb17ae618.jpg" width="180"/>    
-<img src="https://user-images.githubusercontent.com/111415080/219893213-7d12d761-5815-41d9-b1d6-571fc1f1251e.jpg" width="180"/>
-<img src="https://user-images.githubusercontent.com/111415080/219893271-cc90e446-b7b8-44cf-81ec-fcca4413cfc2.jpg" width="180"/>
-<img src="https://user-images.githubusercontent.com/111415080/219893299-ee189ab8-e8e9-49e8-81fc-8b0adeeea008.jpg" width="180"/>
-<img src="https://user-images.githubusercontent.com/111415080/219893384-a8841510-b9b2-4bb6-9a12-76ed78c48843.jpg" width="180"/>
+<p align="center">       
+<img src="https://user-images.githubusercontent.com/111415080/219893188-32225894-746d-49a4-ad63-1e1fb17ae618.jpg" width="190"/>    
+<img src="https://user-images.githubusercontent.com/111415080/219893213-7d12d761-5815-41d9-b1d6-571fc1f1251e.jpg" width="190"/>
+<img src="https://user-images.githubusercontent.com/111415080/219893271-cc90e446-b7b8-44cf-81ec-fcca4413cfc2.jpg" width="190"/>
+<img src="https://user-images.githubusercontent.com/111415080/219893299-ee189ab8-e8e9-49e8-81fc-8b0adeeea008.jpg" width="190"/>
+<img src="https://user-images.githubusercontent.com/111415080/219893384-a8841510-b9b2-4bb6-9a12-76ed78c48843.jpg" width="190"/>
 </p>
+
+<p>
+서브페이지들의 헤더와 풋터 부분은 상시 보일 수 있게 배치하고 안쪽 내용 부분만 다르게 꾸며봤습니다.
+    
+</p>
+
+**마크업**
+
+![Untitled-1](https://user-images.githubusercontent.com/111415080/219902115-922c5b96-f43e-439b-b0f3-9db6f79f320b.jpg)
+
+디자인 작업 후 마크업 작업입니다.
+
+카테고리 목록이나 이미지 배치, 헤더 및 풋터영역 구분등 섹션을 나누어서 작업을 하고 후에 CSS 디자인 작업을 진행합니다.
+
+**인터랙션**
+
+<p align="center">    
+<img src="https://user-images.githubusercontent.com/111415080/219902918-3311b613-dc09-4ae5-9ba0-685d6595dabf.gif">
+</p>
+
+> 검색바는 쇼핑몰에서 중요한 부분이기에 강조효과로 테두리에 그라데이션 효과를 적용했습니다.<br>
+> 테두리 색상은 쿠팡로고에 맞는 색상으로 구성을 했고 검색바 포커스 시 검색창이 커지면서 최근 검색내역등을 확인할 수 있게했습니다.
+
+<p align="center">  
+<img src="https://user-images.githubusercontent.com/111415080/219903133-a3404eeb-4010-4d2e-b0dd-2df1ca7f89b4.gif">
+</p>
+
+> 카테고리 메뉴는 3단 리스트로 구성을하고 마우스hover로 인한 하위 리스트 노출 및 현재 선택되어있는 리스트을 알아볼 수 있게 검은색으로 배경처리 했습니다.
+> 
+
+
 
 ### 기술스택
 
