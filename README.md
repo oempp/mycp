@@ -41,7 +41,7 @@
 상품 검색을 위한 검색바를 최상단에 배치해 한 눈에 들어오도록 했고 그라데이션 테두리 효과를 적용했니다.
     
 메인이미지로는 이벤트나 기획전 상품할인등 중요소식을 볼 수 있도록 배치했습니다.
-
+ 
 카테고리를 세분화 하여 3개의 상품목록으로 디자인했고 하단부분엔 카테고별 상품들이 노출되도록 설계했습니다.
 </p>
 
@@ -241,5 +241,149 @@ location.href = "welcome.php?u_id=<?php echo $u_id ?>&u_name=<?php echo $u_name 
 > 했습니다. 그 결과 디버깅 역할을하는 중간 처리 페이지의 중요성을 알 수 있었고 어떤 방식의 예외처리가 있는지 항상 생각하면서 프로그래밍을 할 수있었습니다.
 
 > **5. 예외처리 및 조건**
+> 
+> 회원가입 시 필요한 예외처리로 아이디 중복확인 및 이미 가입된 개인정보인지 확인합니다. 제가 만든 웹페이지에선 아이디를 이메일형식으로 가입을 하게끔 설계했고 비동기형식으로
+> 만들어봤습니다. 실제로는 중복처리과정에 있어 비동기로 DB에서 일일히 비교하는 건 무리가 있을거라고 생각했지만 이번 프로젝트에서 페이지 이동없이 한 페이지내에서 회원가입을 
+> 할 수 있도록했습니다.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/111415080/219997037-36989364-7aaf-41b8-9771-59bcf9d8ce2b.gif">
+</p>
+<p align="center">
+회원가입 시 비동기처리 및 예외처리
+</p>
+
+```javascript
+	//비동기식 아이디 체크 ajax
+        function getCont(g_id) {
+            /* 이메일 형식 추가 */
+            var CHECK_TYPE_EMAIL = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+            var dsp = document.getElementById("dsp");
+
+            if (!CHECK_TYPE_EMAIL.test(g_id)) {
+                dsp.innerHTML = '아이디는 이메일 형식으로만 입력 할 수 있습니다.';
+                dsp.className = 'redTxt';
+            } else {
+                var xmlhttp = fncGetXMLHttpRequest();
+
+                // 아이디를 체크할 php 페이지에 체크 하려하는 id 값을 파라미터로 전송
+                xmlhttp.open('GET', 'id_check_ajax.php?u_id=' + g_id, false);
+
+                xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == '4' && xmlhttp.status == 200) {
+                        if (xmlhttp.status == 500 || xmlhttp.status == 404 || xmlhttp.status == 403)
+                            alert(xmlhttp.status);
+                        else {
+                            var txt = xmlhttp.responseText;
+                            txt = txt.replace(/\n/g, ""); // 행바꿈 제거
+                            txt = txt.replace(/\r/g, ""); // 엔터값 제거
+                            txt = txt.replace(/\s+/, ""); // 왼쪽 공백 제거
+                            txt = txt.replace(/\s+$/g, ""); // 오른쪽 공백 제거
+                            if (txt == 'Y') {
+                                dsp.innerHTML = '이미 가입된 아이디(이메일) 입니다.';
+                                dsp.className = 'redTxt';
+                            } else {
+                                dsp.innerHTML = '사용할 수 있는 아이디(이메일) 입니다.';
+                                dsp.className = 'green_txt';
+                            }
+                        }
+                    }
+                }
+            }
+            xmlhttp.send();
+        }
+
+```
+
+```javascript
+        //비밀번호 정규식 체크
+        function pwdFormCheck(pwd) {
+            //최소 8 자, 하나 이상의 문자, 하나의 숫자 및 하나의 특수 문자 정규식
+            var CHECK_TYPE_PWD = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+
+            var dsp = document.getElementById("dsp_pwd");
+            var dsp_ck = document.getElementById("dsp_ck_pwd");
+            var g_id = document.getElementById("user_info_id");
+            var pwd_val = document.getElementById("user_info_chkPwd").value;
+
+            if (!CHECK_TYPE_PWD.test(pwd)) {
+                dsp.innerHTML = '영문/숫자/특수문자를 포함한 8자이상 20자리 이하<br>';
+                dsp.className = 'redTxt';
+            } else if (pwd == g_id.value) {
+                dsp.innerHTML = '비밀번호는 아이디(이메일)와 동일하게 사용할 수 없습니다.';
+                dsp.className = 'redTxt';
+            } else {
+                dsp.innerHTML = '사용 가능한 비밀번호입니다.';
+                dsp.className = 'green_txt';
+            }
+            if (pwd_val) {
+                if (pwd_val != pwd) {
+                    dsp_ck.innerHTML = '비밀번호가 일치하지 않습니다.';
+                    dsp_ck.className = 'redTxt';
+                } else {
+                    dsp_ck.innerHTML = '비밀번호가 일치합니다.';
+                    dsp_ck.className = 'green_txt';
+                }
+            }
+        }
+
+        //비밀번호 확인 체크
+        function pwd_check(pwd_check) {
+            var dsp_ck = document.getElementById("dsp_ck_pwd");
+            var pwd = document.getElementById("user_info_pwd");
+
+            if (pwd_check != pwd.value) {
+                dsp_ck.innerHTML = '비밀번호가 일치하지 않습니다.';
+                dsp_ck.className = 'redTxt';
+            } else {
+                dsp_ck.innerHTML = '비밀번호가 일치합니다.';
+                dsp_ck.className = 'green_txt';
+            }
+        }
+
+```
+
+> 먼저 아이디 형식으로는 정규표현식을 사용하여 이메일형식으로만 가입 할수 있게 설정을 했고 비밀번호도 최소 8자, 하나 이상의 문자, 하나의 숫자 및 하나의 특수 문자를 조합해야만
+> 가입가능하도록 했습니다. 그외 필수 정보로는 이름및 생년월일, 성별정도 이고 주소지나 배송지 정보는 나중에 기입 할 수 있게했습니다.
+
+> **6. Session**
 >
->
+> 회원가입 후 로그인 및 로그인정보를 저장하기 위해 Session을 사용했습니다. 로그인 했을 시 해당 유저데이터를 저장하고 개인정보 수정 및 글쓰기 기능을 가능하도록 합니다.
+
+
+```php
+<?php
+session_start();
+
+ $s_idx = isset($_SESSION["s_idx"])? $_SESSION["s_idx"] : "";
+ $s_id = isset($_SESSION["s_id"])? $_SESSION["s_id"] : "";
+ $s_name = isset($_SESSION["s_name"])? $_SESSION["s_name"] : "";
+ ?>
+```
+<p align="center">
+로그인 시 세션 변수에 인덱스 와 로그인유저 정보 저장
+</p>
+
+```php
+<?php
+session_start();
+
+//세션 삭제
+//unset(세션 변수);
+unset($_SESSION["s_idx"]);  //로그인 페이지 에서 만들었던 변수들 삭제
+unset($_SESSION["s_id"] );
+unset($_SESSION["s_name"]);
+
+//페이지 이동
+echo "    
+<script type=\"text/javascript\">
+location.href=\"../index.php\";
+</script>";
+?>
+```
+
+<p align="center">
+로그인 아웃 시 세션 삭제
+</p>
