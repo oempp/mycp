@@ -1,0 +1,153 @@
+.main_logintxt {
+    font-size: 40px;
+    width: 820px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 150px auto 100px;
+}
+
+
+.main_formbox {
+    position: relative;
+}
+
+.main_loginbox {
+    width: 820px;
+    height: 1010px;
+    margin: 100px auto 150px;
+    border: 1px solid #323232;
+}
+
+.sub_logo {
+    width: 171px;
+    height: 38px;
+    margin: 50px auto 100px;
+    background: url(../images/login/logo_171x38.png);
+}
+
+.login_id_inputbox,
+.login_pw_inputbox {
+    width: 724px;
+    height: 50px;
+    margin: 0px auto 10px;
+    border-bottom: 3px solid #b4b4b4;
+}
+.login_id_inputbox >input, .login_pw_inputbox > input {
+    width: 704px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+}
+
+.check_loging {
+    display: block;
+    width: 724px;
+    font-size: 14px;
+    height: 30px;
+    margin: auto;
+    line-height: 30px;
+/*     background-color: aquamarine; */
+}
+
+.find_infobox {
+    display: flex;
+    width: 350px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+/*     background-color: bisque; */
+    justify-content: center;
+    position: absolute;
+    right: 48px;
+    top: 126px;
+}
+
+.between_bar::after,
+.between_bar::before {
+    content: "ㅣ";
+    margin: 0px 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.login_btn {   
+    width: 645px;
+    height: 75px;
+    margin: 60px auto 0px;
+}
+
+.login_btn > button {
+    display: block;
+    width: 645px;
+    height: 75px;
+    background-color: #50a3d9;
+    border-style: none;
+    font-size: 30px;
+    color: #ffffff;
+}
+.only_pos {
+    position: absolute;
+    left: 50px;
+}
+
+.or_txt {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 20px;
+    background-color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    margin: 40px auto;
+    z-index: 2;
+}
+
+.or_line {
+    position: relative;
+    top : 55px;
+    width: 724px;
+    z-index: 1;
+}
+
+.sns_loginbox {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto 0px;
+/*     background-color: #b82e2e; */
+    justify-content: space-evenly;
+    align-items:center;
+}
+.sns_loginbox li {
+    width: 260px;
+    position: relative;
+    margin: 20px;
+}
+
+.sns_navertxt {  
+    position: absolute;
+    left: 80px;
+    top: 26px;
+}
+
+.sns_kakaotxt {  
+    position: absolute;
+    left: 80px;
+    top: 27px;
+}
+.sns_facebooktxt {  
+    position: absolute;
+    left: 80px;
+    top: 27px;
+}
+
+.sns_appletxt {  
+    position: absolute;
+    left: 80px;
+    top: 27px;
+}
+
+
+

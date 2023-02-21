@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한진</title>
+
+    <style type="text/css">
+        .hidden {
+            display: none
+        }
+
+        .logo {
+            width: 184px;
+            height: 39px;
+            border: 1px solid black;
+        }
+        
+        .logo a:not(:hover){
+            transform: rotateX(215deg);
+        }
+
+        .logo a {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 184px;
+            height: 39px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/logo.jpg) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        .logo02 {
+            width: 142px;
+            height: 29px;
+            border: 1px solid black;
+        }
+
+        .logo02 h2 {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 142px;
+            height: 29px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/logo02.jpg) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        .contBox1{
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+            overflow:visible;
+        }
+        .cont1 {
+            width: 321px;
+            height: 400px;
+            border-right: 1px solid #cbcbcb;
+            border-bottom: 1px solid #cbcbcb;
+            background:url(images/glp_image1.jpg) no-repeat;
+            padding: 260px 20px 20px ;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .cont2 {
+            width: 321px;
+            height: 400px;
+            border-right: 1px solid #cbcbcb;
+            border-bottom: 1px solid #cbcbcb;
+            background:url(images/glp_image2.jpg) no-repeat;
+            padding: 260px 20px 20px ;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .cont3 {
+            width: 321px;
+            height: 400px;
+            border-right: 1px solid #cbcbcb;
+            border-bottom: 1px solid #cbcbcb;
+            background:url(images/glp_image3.jpg) no-repeat;
+            padding: 260px 20px 20px ;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .globalHanjin {
+            width: 535px;
+            height: 24px;
+            border: 1px solid black;
+        }
+
+        .globalHanjin h2 {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 535;
+            height: 24px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/global_hanjin.jpg) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        .moreArrow {
+            width: 68px;
+            height: 24px;
+            /* border: 1px solid black;/ */
+        }
+
+        .moreArrow a {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 68;
+            height: 24px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/more.gif) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        .moreArrow02 {
+            width: 116px;
+            height: 39px;
+            /* border: 1px solid black;/ */
+        }
+
+        .moreArrow02 a {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 116px;
+            height: 39px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/news_more.jpg) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+
+        .moreView {
+            width: 92px;
+            height: 31px;
+            /* border: 1px solid black;/ */
+        }
+
+        .moreView a {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 92;
+            height: 31px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/moreView.jpg) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        .ltIcon {
+            width: 23px;
+            height: 42px;
+            /* border: 1px solid black;/ */
+        }
+
+        .ltIcon a {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 23;
+            height: 42px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/lt_icon.jpg) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        .gtIcon {
+            width: 23px;
+            height: 42px;
+            /* border: 1px solid black;/ */
+        }
+
+        .gtIcon a {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 23;
+            height: 42px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/gt_icon.jpg) no-repeat;
+            transform: rotate(45deg);
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        .veiwBox {
+            width: 178px;
+            height: 42px;
+            /* border: 1px solid black;/ */
+        }
+
+        .viewBox a {
+            /* 인라인 일 때 display:block 적용 */
+            display: block;
+            /* 로고사이즈 적용 */
+            width: 178;
+            height: 42px;
+            /* 이미지 불러오기 / 반복 적용 x */
+            background: url(images/view_box.jpg) no-repeat;
+            /* 텍스트 disable/ 들여쓰기 */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header id="header" class="header">
+        <h1 class="logo"><a href="#">한진</a></h1>
+
+        <nav class="gnb">
+            <h2 class="hidden">주요메뉴</h2>
+            <ul>
+                <!-- 서브메뉴
+                서브메뉴
+                서브메뉴
+                서브메뉴 -->
+                <li><a href="#">한진소개</a>
+                    <ul>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                        <li><a href="#">서브메뉴</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">홍보센터</a></li>
+                <li><a href="#">사업영역</a></li>
+                <li><a href="#">투자정보</a></li>
+                <li><a href="#">한진인</a></li>
+                <li><a href="#">고객지원</a></li>
+            </ul>
+        </nav>
+
+        <div class="top menu">
+            <h2 class="hidden">사용자 메뉴</h2>
+            <a href="#">SITE MAP</a>
+            <a href="#">ENGLISH</a>
+        </div>
+    </header>
+
+    <!-- 메인 -->
+    <main id="content" class="content">
+        <section class="main_image">
+            <h2>주요 소식</h2>
+            <ul>
+                <li><a href="#">내용 1</a></li>
+                <li><a href="#">내용 2</a></li>
+                <li><a href="#">내용 3</a></li>
+            </ul>
+
+            <div class="globalHanjin">
+                <h2>세계적 물류기업, 한진</h2>
+            </div>
+
+
+            <p>땀과 희망을 전해왔습니다.</p>
+            <p>전세계에 행복과 미래를 전달합니다.</p>
+
+            <p>주가정보 25,250 하락 200(0.79%)</p>
+<div class="contBox1">
+    <dl class="cont1">
+        <dt>한진택배</dt>
+        <dd>차별화된 고품격 택배서비스를 제공합니다.
+            <div class="moreArrow">
+                <a href="#">더보기</a>
+            </div>
+        </dd>
+    </dl>
+
+    <dl class="cont2">
+        <dt>한진렌터카</dt>
+        <dd>제주 렌터카, 장기 렌탈,<br>
+            최상의 한진 렌터카 서비스를 만나보세요.
+            <div class="moreArrow">
+                <a href="#">더보기</a>
+            </div>
+        </dd>
+    </dl>
+
+    <dl class="cont3">
+        <dt>이하넥스</dt>
+        <dd>해외직구 상품구매에서 배송대행<br>
+            서비스가지 편리하게 이용하세요.
+            <div class="moreArrow">
+                <a href="#">더보기</a>
+            </div>
+        </dd>
+    </dl>
+</div>
+
+
+
+        </section>
+
+        <section class="biz">
+            <h2>사업 소개</h2>
+            <p>글로벌 종합물류기업으로서 최상의 물류서비스를 제공합니다.</p>
+        </section>
+
+        <section>
+            <dl>
+                <dt>물류사업</dt>
+                <dd> 한진은 70여년간 쌓아온 전문 물류 노하우를 바탕으로 3PL, 육운사업, 항만물류사업, 해운사업, 중량물사업, 보관물류 사업 등을 수행하고 있습니다.
+                    <div class="moreView">
+                        <a href="#">자세히보기</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>물류사업</dt>
+                <dd> 한진은 70여년간 쌓아온 전문 물류 노하우를 바탕으로 3PL, 육운사업, 항만물류사업, 해운사업, 중량물사업, 보관물류 사업 등을 수행하고 있습니다.
+                    <div class="moreView">
+                        <a href="#">자세히보기</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>물류사업</dt>
+                <dd> 한진은 70여년간 쌓아온 전문 물류 노하우를 바탕으로 3PL, 육운사업, 항만물류사업, 해운사업, 중량물사업, 보관물류 사업 등을 수행하고 있습니다.
+                    <div class="moreView">
+                        <a href="#">자세히보기</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <p>
+            <div class="ltIcon"><a href="#">이전</a></div>
+            <div class="gtIcon"><a href="#">다음</a></div>
+            </p>
+        </section>
+
+        <section>
+            <h2>한진 뉴스</h2>
+            <p>한진의 새로운 소식들을 만나보실 수 있습니다.</p>
+        </section>
+
+        <section>
+            <p> ㈜한진, 택배기사에게 ‘크리스마스 기프트박스’ 선물
+                종합물류기업 한진이 코로나19로 증가한 택배물량으로 바쁘...</p>
+            <p>2020.12.21</p>
+
+            <p> ㈜한진, 택배기사에게 ‘크리스마스 기프트박스’ 선물
+                종합물류기업 한진이 코로나19로 증가한 택배물량으로 바쁘...</p>
+            <p>2020.12.21</p>
+
+            <p> ㈜한진, 택배기사에게 ‘크리스마스 기프트박스’ 선물
+                종합물류기업 한진이 코로나19로 증가한 택배물량으로 바쁘...</p>
+            <p>2020.12.21</p>
+
+            <div class="moreArrow02">
+                <a href="#">더보기</a>
+            </div>
+
+        </section>
+
+        <div class="viewBox">
+            <p>한진 CI 소개</p>
+            <a href="#">자세히보기</a>
+        </div>
+
+        <section>
+            <h2>한진 영상</h2>
+            <p>영상보기</p>
+            <a href="#">더보기</a>
+        </section>
+
+        <section>
+            <h2>사회 공헌</h2>
+            <p>국립현충원 봉사활동</p>
+            <a href="#">더보기</a>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="logo02">
+            <h2>한진</h2>
+        </div>
+
+        <div>
+            <h2>사이트 이용안내</h2>
+            <h3>약관 및 정책</h3>
+            <a href="#">사이트 이용약관</a>
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">이메일 무단수집거부</a>
+            <a href="#">Global Home</a>
+        </div>
+
+        <div>
+            <h3>그룹사 바로가기</h3>
+            <ul>
+                <li><a href="#">그룹사 1</a></li>
+                <li><a href="#">그룹사 2</a></li>
+                <li><a href="#">그룹사 3</a></li>
+                <li><a href="#">그룹사 4</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <address>주소 : 서울시 중구 남대문로 63 (주)한진</address>
+            <p>대표번호 : 02-728-5114</p>
+            <p>대표이사 사장 : 서용원</p>
+            <p>사업자등록번호 : 201-81-02823</p>
+        </div>
+
+        <p>&copy; Copyright HANJIN All right reserved</p>
+    </footer>
+
+</body>
+
+</html>

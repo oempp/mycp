@@ -1,0 +1,45 @@
+DB명 : front
+
+Table명 : product_cmt
+-------------------------------------------------------------------
+항목 | 필드명 | 데이터타입(길이) | 제약
+-------------------------------------------------------------------
+인덱스 | idx | int | AI, PK
+상품코드 | p_code | varchar(20) | NN
+작성자 | cmt_name | varchar(20) | NN
+비밀번호 | cmt_pwd | varchar(20) | NN
+제목 | cmt_title | varchar(255) | NN
+내용 | cmt_content | text | NN
+작성일자 | cmt_date | datetime | NN
+조회수 | cmt_cnt | int | default 0
+
+** 상품평 **
+* 테이블 생성 : product_cmt
+create table product_cmt(
+    idx int auto_increment primary key,
+    p_code varchar(20) not null,
+    cmt_name varchar(20) not null,
+    cmt_pwd varchar(20) not null,
+    cmt_title varchar(255) not null,
+    cmt_content text not null,
+    cmt_date date not null,
+    cmt_cnt int default 0
+);
+
+** 문의 **
+
+* 테이블 생성 : product_qna
+create table product_qna(
+    idx int auto_increment primary key,
+    p_code varchar(20) not null,    
+    qna_name varchar(20) not null,
+    qna_pwd varchar(20) not null,
+    qna_title varchar(255) not null,
+    qna_content text not null,
+    qna_answer text not null,
+    qna_answer_check varchar (20) not null,	
+    qna_date date not null,
+    qna_cnt int default 0
+);
+
+insert into product_qna(p_code, qna_name, qna_pwd, qna_cate, qna_title, qna_content, qna_date) values('p.00000002', '상품2번', '123123', 'q_shpping', '2번문의임', '2번비버버번', '2022-11-17');
