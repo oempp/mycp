@@ -1,8 +1,8 @@
-# 웹 퍼블리싱 프로젝트
+# 웹 프로젝트
 ## Link : http://tws1.dothome.co.kr/my_coupang/
 # 웹사이트 리뉴얼 해보기
 
-### 웹 퍼블리싱 기획 
+### 웹 기획 
     
 > 웹프로그래밍 기초학습한 후 실제 이용되는 웹사이트처럼 만들어 보고자 프로젝트를 기획했습니다.<br>
 사이트를 정한 뒤 사이트를 리뉴얼 하는 방향으로 정했고 여러가지 기능구현을 고려해 쇼핑몰 관련사이트로 정하고 디자인 시안을 만들고 코딩을 통해 디자인을 구현하고 나아가 서버 연동 및 배포까지 염두하고 작업을 진행했습니다.
@@ -26,6 +26,8 @@
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
+<img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white"> 
 </p>
     
 <br>
