@@ -187,7 +187,7 @@ mysqli_set_charset($dbcon, "utf8");
 > 회원가입 페이지의 form요소의 action링크에 insert.php의 중간처리 페이지로 데이터를 넘기고 거기서 데이터들이 맞게 들어왔는지 쿼리문 체크를하고 오류가 있을 시 전페이지로
 > history.back 합니다.
 
-<p align="center">	
+//<p align="center">	
 <img src="https://user-images.githubusercontent.com/111415080/219985834-f37f51d1-a979-4b89-b7d2-092b7c143bf0.jpg">
 </p>
 <p align="center">
