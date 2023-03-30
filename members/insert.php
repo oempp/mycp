@@ -21,6 +21,7 @@ $u_pscode = $_POST["u_pscode"];
 $u_1st_addr = $_POST["u_1st_addr"];
 $u_2nd_addr = $_POST["u_2nd_addr"];
 $reg_date = date("y-m-d");
+//$reg_date = date("y-m-d");
 
 isset($u_email)? $u_email:"";
 if ($u_email =="n/a@n/a") $u_email = $u_id;
